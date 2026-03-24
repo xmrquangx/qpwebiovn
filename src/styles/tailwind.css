@@ -1,0 +1,532 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   WebAgencyVN — Design System
+   Primary: #FF8A00 (Orange) | #007BFF (Blue)
+   Spacing: 24px / 16px tokens
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+  /* Brand Colors */
+  --color-primary: #FF8A00;
+  --color-primary-dark: #E07800;
+  --color-blue: #007BFF;
+  --color-blue-dark: #0062CC;
+  --color-foreground: #0F172A;
+  --color-muted: #64748B;
+  --color-border: #E2E8F0;
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #F8F9FB;
+  --color-bg-dark: #0F172A;
+
+  /* Spacing Tokens */
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 48px;
+  --space-xl: 80px;
+
+  /* Typography */
+  --font-h1: 34px;
+  --font-h2: 28px;
+  --font-body: 16px;
+  --line-height: 1.5;
+
+  /* Radius */
+  --radius-card: 12px;
+  --radius-btn: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-foreground);
+  font-size: var(--font-body);
+  line-height: var(--line-height);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+.font-display {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.highlight-orange {
+  background: linear-gradient(135deg, #FF8A00, #FFB347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.highlight-blue {
+  background: linear-gradient(135deg, #007BFF, #0EA5E9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.highlight-word {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight-word::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #FF8A00, #007BFF);
+  border-radius: 2px;
+}
+
+/* ============================================
+   GRADIENT BUTTONS
+   ============================================ */
+.btn-primary {
+  background: linear-gradient(135deg, #FF8A00 0%, #FF6B00 40%, #007BFF 100%);
+  color: white;
+  border: none;
+  border-radius: var(--radius-btn);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 28px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+  box-shadow: 0 4px 15px rgba(255, 138, 0, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #FF6B00 0%, #FF8A00 50%, #0062CC 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 138, 0, 0.4);
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
+}
+
+.btn-primary span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--color-foreground);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-btn);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.2s ease, box-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  border-color: #007BFF;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.15);
+  color: #007BFF;
+}
+
+/* ============================================
+   CARDS
+   ============================================ */
+.card-base {
+  border-radius: var(--radius-card);
+  background: white;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
+  border: 1px solid var(--color-border);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.card-base:hover {
+  transform: scale(1.02) translateY(-2px);
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.1), 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+/* ============================================
+   SPOTLIGHT CARD (from Template 2)
+   ============================================ */
+.spotlight-card {
+  position: relative;
+  border-radius: var(--radius-card);
+  background: white;
+  overflow: hidden;
+  --mouse-x: 0px;
+  --mouse-y: 0px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.spotlight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 138, 0, 0.4),
+    transparent 40%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+
+.spotlight-card:hover {
+  transform: scale(1.02) translateY(-2px);
+  box-shadow: 0 12px 40px rgba(255, 138, 0, 0.1);
+}
+
+/* ============================================
+   ARCH IMAGES (from Template 1)
+   ============================================ */
+.arch-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
+}
+
+.arch-image:hover {
+  transform: scale(1.12) !important;
+  z-index: 50;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes animationIn {
+  0% { opacity: 0; transform: translateY(20px); filter: blur(4px); }
+  100% { opacity: 1; transform: translateY(0); filter: blur(0px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 138, 0, 0.3); }
+  50% { box-shadow: 0 0 0 8px rgba(255, 138, 0, 0); }
+}
+
+@keyframes beam-drop {
+  0% { top: -100px; opacity: 0; }
+  20% { opacity: 0.6; }
+  80% { opacity: 0.6; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeSlideUp {
+  0% { opacity: 0; transform: translateY(32px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  0% { opacity: 0; transform: scale(0.92); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: animationIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-on-scroll {
+  opacity: 1;
+}
+
+.animate-on-scroll.will-animate {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.animate-on-scroll.animated {
+  animation: fadeSlideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ============================================
+   BEAM LINES
+   ============================================ */
+.beam {
+  position: absolute;
+  width: 1px;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, rgba(255, 138, 0, 0.4), transparent);
+  animation: beam-drop 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.beam-delay-1 { animation-delay: 2s; }
+.beam-delay-2 { animation-delay: 4s; }
+
+/* ============================================
+   GRADIENT TEXT BADGE
+   ============================================ */
+.badge-gradient {
+  background: linear-gradient(135deg, rgba(255, 138, 0, 0.1), rgba(0, 123, 255, 0.1));
+  border: 1px solid rgba(255, 138, 0, 0.2);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FF8A00;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ============================================
+   SECTION DIVIDERS
+   ============================================ */
+.section-white { background: #FFFFFF; }
+.section-alt { background: #F8F9FB; }
+.section-dark { background: #0F172A; }
+
+/* ============================================
+   PORTFOLIO CARD
+   ============================================ */
+.portfolio-card {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 4/3;
+}
+
+.portfolio-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.85) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.portfolio-card:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ============================================
+   PROCESS STEP
+   ============================================ */
+.process-step {
+  position: relative;
+}
+
+.process-connector {
+  position: absolute;
+  top: 28px;
+  left: calc(50% + 28px);
+  right: calc(-50% + 28px);
+  height: 2px;
+  background: linear-gradient(90deg, #FF8A00, #007BFF);
+  opacity: 0.3;
+}
+
+/* ============================================
+   FAQ ACCORDION
+   ============================================ */
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #F8F9FB; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 10px; }
+
+/* ============================================
+   GRAIN TEXTURE
+   ============================================ */
+.grain {
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.015;
+  pointer-events: none;
+  z-index: 999;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  :root {
+    --font-h1: 28px;
+    --font-h2: 22px;
+  }
+
+  .arch-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ============================================
+   PRICING BADGE
+   ============================================ */
+.pricing-popular {
+  background: linear-gradient(135deg, #FF8A00, #007BFF);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ============================================
+   TRUST BADGE
+   ============================================ */
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(255, 138, 0, 0.06), rgba(0, 123, 255, 0.06));
+  border: 1px solid rgba(255, 138, 0, 0.15);
+}
+
+/* ============================================
+   ZALO FLOAT BUTTON
+   ============================================ */
+.zalo-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0068FF, #00B4FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 104, 255, 0.4);
+  animation: pulse-glow 2s ease-in-out infinite;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.zalo-float:hover {
+  transform: scale(1.1);
+}
+
+/* ============================================
+   GLASS NAV
+   ============================================ */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+}
+
+/* ============================================
+   SELECTION
+   ============================================ */
+::selection {
+  background: rgba(255, 138, 0, 0.2);
+  color: #0F172A;
+}
