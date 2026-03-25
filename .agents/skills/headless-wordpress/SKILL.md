@@ -346,8 +346,55 @@ testimonial: {
 | 6 | Featured image URL không có | `_embed=1` + `_embedded['wp:featuredmedia']` |
 | 7 | Taxonomy term names | `_embed=1` + `_embedded['wp:term']` |
 | 8 | WordPress encode `&` → `&#038;` | `stripHtml()` phải decode HTML entities |
-| 9 | REST API `401 rest_cannot_edit` khi write meta | **KHÔNG dùng REST API để import data!** Tạo PHP plugin import, upload + activate → tự import. Dùng `update_field()` trực tiếp |
+| 9 | REST API `401 rest_cannot_edit` khi write meta | **Dùng WXR XML import** (`WP Admin → Tools → Import → WordPress`). KHÔNG dùng REST API hay PHP plugin |
 | 10 | Next.js Image slider không đổi ảnh | Thêm `key={activeIndex}` vào `<Image>` để force React remount |
+| 11 | CORS block POST từ frontend → WP | Dùng Next.js API route (`/api/xxx`) làm proxy, server-to-server không cần CORS |
+| 12 | `www.qpweb.io.vn` vs `qpweb.io.vn` CORS | Thêm cả 2 origins vào CORS whitelist trong plugin |
+
+---
+
+## Import Data Pattern — WXR XML
+
+**Luôn dùng WordPress XML (WXR) để import data thay vì REST API hoặc PHP plugin.**
+
+File: `docs/wordpress-import/portfolio-details.xml`
+
+```xml
+<item>
+  <title><![CDATA[Post Title]]></title>
+  <wp:post_name><![CDATA[slug-here]]></wp:post_name>
+  <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+  <wp:status><![CDATA[publish]]></wp:status>
+  <content:encoded><![CDATA[<p>HTML content</p>]]></content:encoded>
+  
+  <!-- Simple meta -->
+  <wp:postmeta>
+    <wp:meta_key><![CDATA[field_name]]></wp:meta_key>
+    <wp:meta_value><![CDATA[value]]></wp:meta_value>
+  </wp:postmeta>
+  
+  <!-- Repeater: count + indexed sub-fields -->
+  <wp:postmeta><wp:meta_key><![CDATA[repeater_field]]></wp:meta_key><wp:meta_value><![CDATA[3]]></wp:meta_value></wp:postmeta>
+  <wp:postmeta><wp:meta_key><![CDATA[repeater_field_0_sub_field]]></wp:meta_key><wp:meta_value><![CDATA[val]]></wp:meta_value></wp:postmeta>
+</item>
+```
+
+Import: **WP Admin → Tools → Import → WordPress → Upload XML**
+
+---
+
+## SiteOptionsContext Pattern
+
+Fetch contact info (hotline/zalo/email) từ WP Options Page 1 lần ở root layout, share qua React Context:
+
+```tsx
+// layout.tsx (server)
+const options = await getContactOptions(); // GET /qpweb/v1/options
+<SiteOptionsProvider options={options}>{children}</SiteOptionsProvider>
+
+// Any client component
+const { hotline, zalo, email } = useSiteOptions();
+```
 
 ---
 

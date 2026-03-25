@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- WordPress WXR Import File — Portfolio Details -->
+<!-- Import: WP Admin → Tools → Import → WordPress -->
+<!-- Lưu ý: Nếu post đã tồn tại (trùng slug), WP sẽ hỏi: chọn "Import" để tạo mới hoặc xóa bài cũ trước khi import -->
+<rss version="2.0"
+  xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+  <title>QPWeb Portfolio Details</title>
+  <link>https://api.qpweb.io.vn</link>
+  <language>vi</language>
+  <wp:wxr_version>1.2</wp:wxr_version>
+  <wp:base_site_url>https://api.qpweb.io.vn</wp:base_site_url>
+  <wp:base_blog_url>https://api.qpweb.io.vn</wp:base_blog_url>
+
+  <!-- ══════════════════════════════════════════
+       1. Spa Hương Thơm
+       ══════════════════════════════════════════ -->
+  <item>
+    <title><![CDATA[Spa Hương Thơm TPHCM]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<p>Spa Hương Thơm là một spa cao cấp tại TP.HCM chuyên cung cấp các dịch vụ chăm sóc sắc đẹp và thư giãn. Khách hàng cần một website sang trọng, dễ đặt lịch và tối ưu SEO local để thu hút khách hàng mới trong khu vực.</p>]]></content:encoded>
+    <wp:post_name><![CDATA[spa-huong-thom]]></wp:post_name>
+    <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:menu_order>1</wp:menu_order>
+    <category domain="portfolio-cat" nicename="spa-beauty"><![CDATA[Spa & Beauty]]></category>
+
+    <!-- Simple fields -->
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_client]]></wp:meta_key><wp:meta_value><![CDATA[Spa Hương Thơm - TP.HCM]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_result]]></wp:meta_key><wp:meta_value><![CDATA[+40% lượt đặt lịch qua web]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tag_color]]></wp:meta_key><wp:meta_value><![CDATA[bg-pink-100 text-pink-700]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_location]]></wp:meta_key><wp:meta_value><![CDATA[TP.HCM]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_duration]]></wp:meta_key><wp:meta_value><![CDATA[5 ngày]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_year]]></wp:meta_key><wp:meta_value><![CDATA[2024]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_demo_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_challenge]]></wp:meta_key><wp:meta_value><![CDATA[Trước đây Spa Hương Thơm chỉ nhận khách qua Zalo và giới thiệu miệng. Không có website, không có hiện diện online, khó mở rộng tệp khách hàng mới. Cần một giải pháp nhanh, đẹp và hiệu quả ngay từ ngày đầu.]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_solution]]></wp:meta_key><wp:meta_value><![CDATA[Thiết kế website WordPress Flatsome với giao diện màu hồng kem sang trọng, tích hợp hệ thống đặt lịch online, chat Zalo trực tiếp và tối ưu SEO local cho từ khóa "spa TP.HCM". Toàn bộ hoàn thành trong 5 ngày làm việc.]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_name]]></wp:meta_key><wp:meta_value><![CDATA[Chị Hương]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_role]]></wp:meta_key><wp:meta_value><![CDATA[Chủ Spa Hương Thơm, TP.HCM]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_quote]]></wp:meta_key><wp:meta_value><![CDATA[Mình rất hài lòng với website mới. Chỉ sau 2 tuần ra mắt đã có khách đặt lịch qua web, điều mà trước đây mình không nghĩ tới. Giao diện đẹp, dễ dùng và quan trọng là khách hàng khen nhiều lắm!]]></wp:meta_value></wp:postmeta>
+
+    <!-- Tech repeater (SCF format) -->
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech]]></wp:meta_key><wp:meta_value><![CDATA[6]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_0_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[WordPress]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_1_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Flatsome Theme]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_2_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Booking System]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_3_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[SEO Local]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_4_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Zalo OA]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_5_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Google Analytics]]></wp:meta_value></wp:postmeta>
+
+    <!-- Gallery repeater (SCF format) -->
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_0_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://images.unsplash.com/photo-1672666037110-2dbdff9ac52e]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_0_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Trang chủ — Giao diện sang trọng, tối giản]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_1_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_19da85e8e-1772182199533.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_1_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Trang dịch vụ — Liệt kê đầy đủ liệu trình]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_2_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_10fff23d0-1766589453161.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_2_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Đặt lịch online — Tích hợp booking system]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_3_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_19330abe5-1772905195171.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_3_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Giới thiệu — Xây dựng niềm tin khách hàng]]></wp:meta_value></wp:postmeta>
+  </item>
+
+  <!-- ══════════════════════════════════════════
+       2. The Brew House
+       ══════════════════════════════════════════ -->
+  <item>
+    <title><![CDATA[The Brew House]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<p>The Brew House là quán cà phê phong cách vintage tại Hoàn Kiếm, Hà Nội. Quán cần website để giới thiệu không gian, menu và thu hút khách hàng qua tìm kiếm Google địa phương.</p>]]></content:encoded>
+    <wp:post_name><![CDATA[the-brew-house]]></wp:post_name>
+    <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:menu_order>2</wp:menu_order>
+    <category domain="portfolio-cat" nicename="fb"><![CDATA[F&B]]></category>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_client]]></wp:meta_key><wp:meta_value><![CDATA[The Brew House - Hà Nội]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_result]]></wp:meta_key><wp:meta_value><![CDATA[Top 3 Google "cà phê Hoàn Kiếm"]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tag_color]]></wp:meta_key><wp:meta_value><![CDATA[bg-amber-100 text-amber-700]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_location]]></wp:meta_key><wp:meta_value><![CDATA[Hà Nội]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_duration]]></wp:meta_key><wp:meta_value><![CDATA[5 ngày]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_year]]></wp:meta_key><wp:meta_value><![CDATA[2024]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_demo_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_challenge]]></wp:meta_key><wp:meta_value><![CDATA[Quán cà phê đang hoạt động tốt nhưng chưa có hiện diện online. Đối thủ cạnh tranh trong khu vực đã có website và đang chiếm top Google. Cần nhanh chóng xây dựng website và SEO để không bị bỏ lại phía sau.]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_solution]]></wp:meta_key><wp:meta_value><![CDATA[Thiết kế website với phong cách vintage ấm áp, tích hợp menu online, bản đồ Google Maps và tối ưu SEO local mạnh mẽ. Sử dụng schema markup cho local business để tăng khả năng hiển thị trên Google.]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_name]]></wp:meta_key><wp:meta_value><![CDATA[Anh Minh]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_role]]></wp:meta_key><wp:meta_value><![CDATA[Chủ The Brew House, Hà Nội]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_quote]]></wp:meta_key><wp:meta_value><![CDATA[Website giúp quán mình lên top Google chỉ sau 3 tuần. Giờ mỗi ngày có 5-10 khách mới tìm đến qua Google Maps. Đầu tư rất xứng đáng!]]></wp:meta_value></wp:postmeta>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech]]></wp:meta_key><wp:meta_value><![CDATA[6]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_0_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[WordPress]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_1_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Flatsome Theme]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_2_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[SEO Local]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_3_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Schema Markup]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_4_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Google Maps]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_5_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Zalo]]></wp:meta_value></wp:postmeta>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_0_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://images.unsplash.com/photo-1651338520040-5e02e1ce9404]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_0_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Trang chủ — Phong cách vintage đặc trưng]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_1_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_101c23f1e-1772098302371.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_1_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Menu online — Đầy đủ thức uống và giá]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_2_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_1bbcf1307-1772627399820.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_2_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Không gian — Giới thiệu trải nghiệm quán]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_3_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_19d1c6f52-1774325655936.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_3_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Liên hệ & Bản đồ — Dễ tìm đường]]></wp:meta_value></wp:postmeta>
+  </item>
+
+  <!-- ══════════════════════════════════════════
+       3. Minh Tuấn Photo
+       ══════════════════════════════════════════ -->
+  <item>
+    <title><![CDATA[Minh Tuấn Photo]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<p>Minh Tuấn là nhiếp ảnh gia chuyên nghiệp tại Đà Nẵng, chuyên chụp ảnh sự kiện doanh nghiệp, cưới hỏi và portrait. Cần portfolio website tối giản, sang trọng để thu hút khách hàng doanh nghiệp cao cấp.</p>]]></content:encoded>
+    <wp:post_name><![CDATA[minh-tuan-photo]]></wp:post_name>
+    <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:menu_order>3</wp:menu_order>
+    <category domain="portfolio-cat" nicename="nhiep-anh"><![CDATA[Nhiếp ảnh]]></category>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_client]]></wp:meta_key><wp:meta_value><![CDATA[Minh Tuấn Photography - Đà Nẵng]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_result]]></wp:meta_key><wp:meta_value><![CDATA[+60% khách doanh nghiệp mới]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tag_color]]></wp:meta_key><wp:meta_value><![CDATA[bg-gray-100 text-gray-700]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_location]]></wp:meta_key><wp:meta_value><![CDATA[Đà Nẵng]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_duration]]></wp:meta_key><wp:meta_value><![CDATA[5 ngày]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_year]]></wp:meta_key><wp:meta_value><![CDATA[2024]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_demo_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_challenge]]></wp:meta_key><wp:meta_value><![CDATA[Minh Tuấn chủ yếu nhận việc qua mạng xã hội nhưng thiếu sự chuyên nghiệp khi tiếp cận khách doanh nghiệp. Cần một portfolio website thể hiện đẳng cấp và tạo niềm tin với khách hàng B2B.]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_solution]]></wp:meta_key><wp:meta_value><![CDATA[Thiết kế portfolio website với giao diện đen trắng tối giản, gallery ảnh tốc độ cao, trang giới thiệu dịch vụ rõ ràng và form liên hệ chuyên nghiệp. Tối ưu SEO cho từ khóa "nhiếp ảnh doanh nghiệp Đà Nẵng".]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_name]]></wp:meta_key><wp:meta_value><![CDATA[Minh Tuấn]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_role]]></wp:meta_key><wp:meta_value><![CDATA[Nhiếp ảnh gia, Đà Nẵng]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_quote]]></wp:meta_key><wp:meta_value><![CDATA[Từ khi có website, khách doanh nghiệp liên hệ nhiều hơn hẳn. Họ nói nhìn website thấy chuyên nghiệp nên mới dám thuê. Đây là khoản đầu tư tốt nhất mình từng làm.]]></wp:meta_value></wp:postmeta>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech]]></wp:meta_key><wp:meta_value><![CDATA[6]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_0_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[WordPress]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_1_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Portfolio Theme]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_2_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Gallery Lightbox]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_3_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[SEO]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_4_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Contact Form]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_5_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Lazy Loading]]></wp:meta_value></wp:postmeta>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_0_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_138817c9c-1764782793767.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_0_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Trang chủ — Tối giản, sang trọng]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_1_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_1d682778c-1767008426773.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_1_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Gallery — Bố cục masonry chuyên nghiệp]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_2_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_189ab91e9-1772182273187.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_2_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Dịch vụ & Giá — Rõ ràng, minh bạch]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_3_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_163d8dca6-1768133602485.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_3_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Liên hệ — Form đặt lịch chuyên nghiệp]]></wp:meta_value></wp:postmeta>
+  </item>
+
+  <!-- ══════════════════════════════════════════
+       4. Coaching Thành Công
+       ══════════════════════════════════════════ -->
+  <item>
+    <title><![CDATA[Coaching Thành Công]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<p>Coaching Thành Công là trung tâm đào tạo kỹ năng sống và kinh doanh tại TP.HCM. Cần website chuyên nghiệp để giới thiệu khóa học, thu hút học viên và tích hợp đăng ký online.</p>]]></content:encoded>
+    <wp:post_name><![CDATA[coaching-thanh-cong]]></wp:post_name>
+    <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:menu_order>4</wp:menu_order>
+    <category domain="portfolio-cat" nicename="coaching"><![CDATA[Coaching]]></category>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_client]]></wp:meta_key><wp:meta_value><![CDATA[Coaching Thành Công - TP.HCM]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_result]]></wp:meta_key><wp:meta_value><![CDATA[2x học viên đăng ký online]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tag_color]]></wp:meta_key><wp:meta_value><![CDATA[bg-blue-100 text-blue-700]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_location]]></wp:meta_key><wp:meta_value><![CDATA[TP.HCM]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_duration]]></wp:meta_key><wp:meta_value><![CDATA[5 ngày]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_year]]></wp:meta_key><wp:meta_value><![CDATA[2024]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_demo_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_challenge]]></wp:meta_key><wp:meta_value><![CDATA[Trung tâm đang phát triển nhanh nhưng việc quản lý đăng ký học viên qua Zalo và Facebook rất tốn thời gian. Cần hệ thống website tự động hóa quy trình đăng ký và thanh toán.]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_solution]]></wp:meta_key><wp:meta_value><![CDATA[Thiết kế website với trang giới thiệu khóa học chi tiết, hệ thống đăng ký online, tích hợp Zalo OA để chăm sóc học viên và tối ưu SEO cho từ khóa coaching tại TP.HCM.]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_name]]></wp:meta_key><wp:meta_value><![CDATA[Anh Thành]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_role]]></wp:meta_key><wp:meta_value><![CDATA[Giám đốc Coaching Thành Công, TP.HCM]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_quote]]></wp:meta_key><wp:meta_value><![CDATA[Website giúp chúng tôi tiết kiệm rất nhiều thời gian xử lý đăng ký. Học viên có thể tự đăng ký và thanh toán 24/7. Doanh thu tăng rõ rệt chỉ sau 1 tháng.]]></wp:meta_value></wp:postmeta>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech]]></wp:meta_key><wp:meta_value><![CDATA[6]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_0_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[WordPress]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_1_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[LMS Plugin]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_2_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Zalo OA]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_3_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[SEO]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_4_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Payment Gateway]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_5_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Email Marketing]]></wp:meta_value></wp:postmeta>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery]]></wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_0_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_112127b74-1765392059924.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_0_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Trang chủ — Chuyên nghiệp, uy tín]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_1_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_18b3867c0-1768239312455.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_1_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Khóa học — Thông tin đầy đủ, dễ đăng ký]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_2_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_1a11d3b6a-1763300597589.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_2_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Đội ngũ — Xây dựng niềm tin]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_3_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_18b3867c0-1768239312455.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_3_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Đăng ký — Quy trình tự động hóa]]></wp:meta_value></wp:postmeta>
+  </item>
+
+  <!-- ══════════════════════════════════════════
+       5. Thời Trang Linh
+       ══════════════════════════════════════════ -->
+  <item>
+    <title><![CDATA[Thời Trang Linh]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<p>Thời Trang Linh là chuỗi thời trang tại Hải Phòng, cần website thương mại điện tử để bán hàng online và mở rộng tệp khách hàng ra ngoài khu vực.</p>]]></content:encoded>
+    <wp:post_name><![CDATA[thoi-trang-linh]]></wp:post_name>
+    <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:menu_order>5</wp:menu_order>
+    <category domain="portfolio-cat" nicename="thoi-trang"><![CDATA[Thời trang]]></category>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_client]]></wp:meta_key><wp:meta_value><![CDATA[Thời Trang Linh - Hải Phòng]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_result]]></wp:meta_key><wp:meta_value><![CDATA[30% đơn hàng từ website]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tag_color]]></wp:meta_key><wp:meta_value><![CDATA[bg-purple-100 text-purple-700]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_location]]></wp:meta_key><wp:meta_value><![CDATA[Hải Phòng]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_duration]]></wp:meta_key><wp:meta_value><![CDATA[5 ngày]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_year]]></wp:meta_key><wp:meta_value><![CDATA[2024]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_demo_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_challenge]]></wp:meta_key><wp:meta_value><![CDATA[Cần bán hàng online nhưng chỉ có fanpage Facebook, khó quản lý đơn hàng và tồn kho. Cần hệ thống website e-commerce chuyên nghiệp nhưng dễ quản trị.]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_solution]]></wp:meta_key><wp:meta_value><![CDATA[Thiết kế website WooCommerce với giao diện thời trang hiện đại, tích hợp thanh toán online, quản lý tồn kho và tối ưu SEO.]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_name]]></wp:meta_key><wp:meta_value><![CDATA[Chị Linh]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_role]]></wp:meta_key><wp:meta_value><![CDATA[Chủ Thời Trang Linh, Hải Phòng]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_quote]]></wp:meta_key><wp:meta_value><![CDATA[30% đơn hàng giờ đến từ website. Quản lý kho và đơn tiện hơn rất nhiều so với bán qua Facebook.]]></wp:meta_value></wp:postmeta>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech]]></wp:meta_key><wp:meta_value><![CDATA[6]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_0_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[WooCommerce]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_1_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Flatsome Theme]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_2_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[SEO]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_3_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Zalo]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_4_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Payment Gateway]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_5_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Inventory]]></wp:meta_value></wp:postmeta>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery]]></wp:meta_key><wp:meta_value><![CDATA[2]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_0_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_112127b74-1765392059924.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_0_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Trang chủ — Giao diện thời trang hiện đại]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_1_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_18b3867c0-1768239312455.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_1_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Sản phẩm — Bộ sưu tập mới nhất]]></wp:meta_value></wp:postmeta>
+  </item>
+
+  <!-- ══════════════════════════════════════════
+       6. Điện Lạnh Hoàng Phát
+       ══════════════════════════════════════════ -->
+  <item>
+    <title><![CDATA[Điện Lạnh Hoàng Phát]]></title>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <content:encoded><![CDATA[<p>Điện Lạnh Hoàng Phát là doanh nghiệp sửa chữa và lắp đặt điều hòa tại Cần Thơ. Cần website để tăng độ tin cậy và thu hút khách hàng mới từ Google.</p>]]></content:encoded>
+    <wp:post_name><![CDATA[dien-lanh-hoang]]></wp:post_name>
+    <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:menu_order>6</wp:menu_order>
+    <category domain="portfolio-cat" nicename="dich-vu"><![CDATA[Dịch vụ]]></category>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_client]]></wp:meta_key><wp:meta_value><![CDATA[Điện Lạnh Hoàng Phát - Cần Thơ]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_result]]></wp:meta_key><wp:meta_value><![CDATA[30% đơn từ website trong 2 tháng]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tag_color]]></wp:meta_key><wp:meta_value><![CDATA[bg-green-100 text-green-700]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_location]]></wp:meta_key><wp:meta_value><![CDATA[Cần Thơ]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_duration]]></wp:meta_key><wp:meta_value><![CDATA[5 ngày]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_year]]></wp:meta_key><wp:meta_value><![CDATA[2024]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_demo_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_challenge]]></wp:meta_key><wp:meta_value><![CDATA[Chỉ có khách quen giới thiệu, chưa có kênh online nào. Đối thủ đã lên top Google từ lâu, cần bắt kịp nhanh chóng.]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_solution]]></wp:meta_key><wp:meta_value><![CDATA[Thiết kế website dịch vụ chuyên nghiệp với bảng giá rõ ràng, nút gọi điện nổi, SEO local mạnh và tích hợp Google My Business.]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_name]]></wp:meta_key><wp:meta_value><![CDATA[Anh Đức]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_role]]></wp:meta_key><wp:meta_value><![CDATA[Chủ Điện Lạnh Hoàng Phát, Cần Thơ]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_testimonial_quote]]></wp:meta_key><wp:meta_value><![CDATA[Bây giờ 30% đơn đến từ website. Khách gọi nói "tìm thấy trên Google" — trước đó chỉ có khách quen giới thiệu thôi.]]></wp:meta_value></wp:postmeta>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech]]></wp:meta_key><wp:meta_value><![CDATA[6]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_0_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[WordPress]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_1_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Flatsome Theme]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_2_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Booking System]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_3_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[SEO Local]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_4_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Google My Business]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_tech_5_tech_item]]></wp:meta_key><wp:meta_value><![CDATA[Click-to-Call]]></wp:meta_value></wp:postmeta>
+
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery]]></wp:meta_key><wp:meta_value><![CDATA[2]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_0_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_138817c9c-1764782793767.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_0_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Trang chủ — Chuyên nghiệp, đáng tin cậy]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_1_gallery_image]]></wp:meta_key><wp:meta_value><![CDATA[https://img.rocket.new/generatedImages/rocket_gen_img_1d682778c-1767008426773.png]]></wp:meta_value></wp:postmeta>
+    <wp:postmeta><wp:meta_key><![CDATA[portfolio_gallery_1_gallery_caption]]></wp:meta_key><wp:meta_value><![CDATA[Dịch vụ — Bảng giá rõ ràng]]></wp:meta_value></wp:postmeta>
+  </item>
+
+</channel>
+</rss>
