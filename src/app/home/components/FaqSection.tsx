@@ -186,7 +186,7 @@ export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: strin
 
                 <div className="space-y-4">
                   <a
-                    href={`https://zalo.me/${zalo.replace(/\s/g, '')}`}
+                    href={`${zalo}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary w-full justify-center text-base"

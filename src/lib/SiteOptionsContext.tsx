@@ -10,7 +10,7 @@ export interface SiteOptions {
 
 const defaultOptions: SiteOptions = {
   hotline: '0901 234 567',
-  zalo: '0901234567',
+  zalo: 'https://zalo.me/0901234567',
   email: 'hello@webagencyvn.com',
 };
 

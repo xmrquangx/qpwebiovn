@@ -27,7 +27,7 @@ export function Organization() {
           "sameAs": [
             "https://facebook.com/webagencyvn",
             "https://youtube.com/webagencyvn",
-            `https://zalo.me/${zalo.replace(/\s/g, '')}`
+            zalo
           ]
         })
       }}

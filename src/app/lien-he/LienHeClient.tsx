@@ -21,7 +21,7 @@ interface FormData {
 
 /* ── Fallback values ── */
 const FALLBACK_HOTLINE = '0901 234 567';
-const FALLBACK_ZALO = '0901234567';
+const FALLBACK_ZALO = 'https://zalo.me/0901234567';
 const FALLBACK_EMAIL = 'hello@webagencyvn.com';
 
 interface Props {
@@ -55,7 +55,7 @@ export default function LienHeClient({ options }: Props) {
       ),
       label: 'Zalo',
       value: 'Nhắn Zalo ngay',
-      href: `https://zalo.me/${zalo.replace(/\s/g, '')}`,
+      href: `${zalo}`,
       desc: 'Phản hồi trong vòng 30 phút',
       color: 'text-blue-brand',
       bg: 'bg-blue-50',
@@ -200,7 +200,7 @@ export default function LienHeClient({ options }: Props) {
                       <h3 className="font-display font-bold text-foreground text-xl mb-2">Gửi thành công!</h3>
                       <p className="text-muted text-sm mb-6">Chúng tôi sẽ liên hệ lại với bạn trong vòng 30 phút qua Zalo hoặc điện thoại.</p>
                       <a
-                        href={`https://zalo.me/${zalo.replace(/\s/g, '')}`}
+                        href={`${zalo}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-primary"
@@ -346,7 +346,7 @@ export default function LienHeClient({ options }: Props) {
 
                       <p className="text-xs text-muted text-center">
                         Hoặc nhắn trực tiếp qua{' '}
-                        <a href={`https://zalo.me/${zalo.replace(/\s/g, '')}`} target="_blank" rel="noopener noreferrer" className="text-blue-brand font-semibold hover:underline">
+                        <a href={`${zalo}`} target="_blank" rel="noopener noreferrer" className="text-blue-brand font-semibold hover:underline">
                           Zalo: {zalo}
                         </a>
                       </p>
