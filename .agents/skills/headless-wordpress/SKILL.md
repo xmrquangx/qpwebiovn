@@ -277,6 +277,63 @@ git push origin main
 
 ---
 
+## Phase 5: Detail Pages (Dynamic Routes)
+
+### Pattern: `[slug]/page.tsx` + Client Component
+
+**Server** — `[slug]/page.tsx`:
+```typescript
+export const dynamic = 'force-dynamic';
+
+export default async function DetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const item = await getItemBySlug(slug);
+  return <DetailClient item={item} slug={slug} />;
+}
+```
+
+**Fetcher** — query by slug:
+```typescript
+export async function getItemBySlug(slug: string): Promise<ItemDetail | null> {
+  const posts = await wpFetch<WPPost[]>('cpt-slug', { slug, per_page: '1' });
+  if (!posts?.length) return null;
+  const p = posts[0];
+  // transform and return
+}
+```
+
+### ACF Repeater Gallery Pattern
+
+WordPress gallery field = **Repeater** with sub-fields `gallery_image` (Image, return URL) + `gallery_caption` (Text).
+
+```typescript
+// Extract gallery from ACF repeater
+const galleryRaw = Array.isArray(acf.portfolio_gallery) ? acf.portfolio_gallery : [];
+const gallery = galleryRaw.map((item) => {
+  const img = item.gallery_image;
+  const src = typeof img === 'string' ? img
+    : typeof img === 'object' && img !== null ? String(img.url || '') : '';
+  return { src, caption: String(item.gallery_caption || '') };
+}).filter((g) => g.src);
+```
+
+### ACF Inline Testimonial Pattern
+
+For per-post testimonials (e.g. portfolio), add 3 simple fields:
+- `portfolio_testimonial_name` (text)
+- `portfolio_testimonial_role` (text)
+- `portfolio_testimonial_quote` (textarea)
+
+```typescript
+testimonial: {
+  text: String(acf.portfolio_testimonial_quote || ''),
+  author: String(acf.portfolio_testimonial_name || ''),
+  role: String(acf.portfolio_testimonial_role || ''),
+},
+```
+
+---
+
 ## ⚠️ 8 Gotchas Quan Trọng
 
 | # | Vấn đề | Giải pháp |
@@ -303,3 +360,4 @@ Khi data không hiện trên Vercel:
 5. ☐ Nếu **timeout/failed**: WP server chặn Vercel IP → thử `force-dynamic`
 6. ☐ Nếu **0 items**: kiểm tra `dynamic = 'force-dynamic'` có trong page.tsx không
 7. ☐ Sửa 1 title trong WP → refresh frontend → nếu không đổi = đang dùng fallback
+
