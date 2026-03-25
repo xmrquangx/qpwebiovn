@@ -4,5 +4,6 @@ import DichVuClient from './DichVuClient';
 
 export default async function DichVuPage() {
   const services = await getServices();
+  console.log(`[DichVuPage] WordPress returned ${services.length} services`);
   return <DichVuClient services={services} />;
 }
