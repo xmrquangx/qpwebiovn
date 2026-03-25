@@ -17,7 +17,7 @@ interface FormData {
   website: string; // honeypot
 }
 
-const WP_API_URL = process.env.NEXT_PUBLIC_WP_API_URL || 'https://api.qpweb.io.vn';
+
 
 /* ── Fallback values ── */
 const FALLBACK_HOTLINE = '0901 234 567';
@@ -112,7 +112,7 @@ export default function LienHeClient({ options }: Props) {
     setErrorMsg('');
 
     try {
-      const res = await fetch(`${WP_API_URL}/wp-json/qpweb/v1/contact`, {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

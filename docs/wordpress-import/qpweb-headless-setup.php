@@ -876,6 +876,7 @@ add_action( 'rest_api_init', function () {
         $origin = get_http_origin();
         $allowed = [
             'https://qpweb.io.vn',
+            'https://www.qpweb.io.vn',
             'http://localhost:4028',
             'http://localhost:3000',
         ];
