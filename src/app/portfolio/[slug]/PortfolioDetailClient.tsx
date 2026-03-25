@@ -206,11 +206,12 @@ export default function PortfolioDetailClient({ project: wpProject, slug, relate
               <div className="mb-4">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-bg-alt" style={{ aspectRatio: '16/9' }}>
                   <AppImage
+                    key={activeImage}
                     src={project.gallery[activeImage]?.src}
                     alt={project.gallery[activeImage]?.alt || project.title}
                     width={1200}
                     height={675}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-opacity duration-300"
                     priority
                   />
                   {project.gallery[activeImage]?.caption && (
