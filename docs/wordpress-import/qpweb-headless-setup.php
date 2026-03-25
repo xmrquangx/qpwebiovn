@@ -882,8 +882,139 @@ add_action( 'rest_api_init', function () {
         if ( in_array( $origin, $allowed, true ) ) {
             header( 'Access-Control-Allow-Origin: ' . $origin );
         }
-        header( 'Access-Control-Allow-Methods: GET, OPTIONS' );
+        header( 'Access-Control-Allow-Methods: GET, POST, OPTIONS' );
         header( 'Access-Control-Allow-Headers: Authorization, Content-Type' );
         return $value;
     });
+});
+
+
+/* ──────────────────────────────────────────────
+ *  7. CUSTOM REST ENDPOINTS
+ *     /qpweb/v1/options  — Trả thông tin liên hệ từ Options Page
+ *     /qpweb/v1/contact  — Nhận form liên hệ từ frontend
+ * ────────────────────────────────────────────── */
+
+add_action( 'rest_api_init', 'qpweb_register_custom_endpoints' );
+
+function qpweb_register_custom_endpoints() {
+
+    /* ── GET /qpweb/v1/options ── */
+    register_rest_route( 'qpweb/v1', '/options', [
+        'methods'             => 'GET',
+        'callback'            => 'qpweb_get_options',
+        'permission_callback' => '__return_true', // Public
+    ]);
+
+    /* ── POST /qpweb/v1/contact ── */
+    register_rest_route( 'qpweb/v1', '/contact', [
+        'methods'             => 'POST',
+        'callback'            => 'qpweb_handle_contact',
+        'permission_callback' => '__return_true', // Public
+    ]);
+}
+
+/**
+ * Trả thông tin liên hệ từ Options Page (SCF/ACF)
+ */
+function qpweb_get_options( $request ) {
+    $hotline = '';
+    $zalo    = '';
+    $email   = '';
+
+    // Thử lấy từ ACF/SCF options page
+    if ( function_exists( 'get_field' ) ) {
+        $hotline = get_field( 'hotline', 'option' ) ?: '';
+        $zalo    = get_field( 'zalo',    'option' ) ?: '';
+        $email   = get_field( 'email',   'option' ) ?: '';
+    }
+
+    // Fallback sang get_option nếu ACF không có
+    if ( empty( $hotline ) ) $hotline = get_option( 'qpweb_hotline', '' );
+    if ( empty( $zalo ) )    $zalo    = get_option( 'qpweb_zalo', '' );
+    if ( empty( $email ) )   $email   = get_option( 'qpweb_email', '' );
+
+    return rest_ensure_response([
+        'hotline' => $hotline,
+        'zalo'    => $zalo,
+        'email'   => $email,
+    ]);
+}
+
+/**
+ * Nhận form liên hệ, lưu vào custom post type + gửi email
+ */
+function qpweb_handle_contact( $request ) {
+    $params = $request->get_json_params();
+
+    $name    = sanitize_text_field( $params['name']    ?? '' );
+    $phone   = sanitize_text_field( $params['phone']   ?? '' );
+    $email   = sanitize_email( $params['email']         ?? '' );
+    $service = sanitize_text_field( $params['service']  ?? '' );
+    $budget  = sanitize_text_field( $params['budget']   ?? '' );
+    $message = sanitize_textarea_field( $params['message'] ?? '' );
+
+    if ( empty( $name ) || empty( $phone ) ) {
+        return new WP_Error( 'missing_fields', 'Vui lòng điền họ tên và số điện thoại.', [ 'status' => 400 ] );
+    }
+
+    // Simple honeypot / rate limit
+    if ( ! empty( $params['website'] ) ) {
+        // Honeypot field filled = bot
+        return rest_ensure_response([ 'success' => true, 'message' => 'Cảm ơn bạn!' ]);
+    }
+
+    // Lưu vào CPT 'contact_submission'
+    $post_id = wp_insert_post([
+        'post_type'   => 'contact_submission',
+        'post_title'  => $name . ' — ' . $phone,
+        'post_status' => 'private',
+        'post_content' => sprintf(
+            "Họ tên: %s\nSĐT: %s\nEmail: %s\nDịch vụ: %s\nNgân sách: %s\nNội dung: %s",
+            $name, $phone, $email, $service, $budget, $message
+        ),
+    ]);
+
+    if ( is_wp_error( $post_id ) ) {
+        return new WP_Error( 'save_failed', 'Không thể lưu form.', [ 'status' => 500 ] );
+    }
+
+    // Lưu meta fields
+    update_post_meta( $post_id, 'contact_name',    $name );
+    update_post_meta( $post_id, 'contact_phone',   $phone );
+    update_post_meta( $post_id, 'contact_email',   $email );
+    update_post_meta( $post_id, 'contact_service',  $service );
+    update_post_meta( $post_id, 'contact_budget',   $budget );
+    update_post_meta( $post_id, 'contact_message',  $message );
+
+    // Gửi email thông báo
+    $admin_email = get_option( 'admin_email' );
+    $subject     = '[QPWeb] Liên hệ mới: ' . $name;
+    $body        = "Tên: {$name}\nSĐT: {$phone}\nEmail: {$email}\nDịch vụ: {$service}\nNgân sách: {$budget}\n\nNội dung:\n{$message}";
+    wp_mail( $admin_email, $subject, $body );
+
+    return rest_ensure_response([
+        'success' => true,
+        'message' => 'Cảm ơn bạn! Chúng tôi sẽ liên hệ lại trong 30 phút.',
+    ]);
+}
+
+
+/* ──────────────────────────────────────────────
+ *  8. REGISTER CONTACT SUBMISSION CPT (ẩn trong menu)
+ * ────────────────────────────────────────────── */
+
+add_action( 'init', function () {
+    register_post_type( 'contact_submission', [
+        'labels'       => [
+            'name'          => 'Liên hệ',
+            'singular_name' => 'Liên hệ',
+        ],
+        'public'       => false,
+        'show_ui'      => true,
+        'show_in_menu' => true,
+        'menu_icon'    => 'dashicons-email-alt',
+        'supports'     => [ 'title', 'editor', 'custom-fields' ],
+        'show_in_rest' => false, // Không cần REST cho CPT này
+    ]);
 });

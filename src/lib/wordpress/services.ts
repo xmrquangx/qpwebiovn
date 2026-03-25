@@ -357,3 +357,44 @@ export async function getFAQs(
     };
   });
 }
+
+/* ═══════════════════════════════════════════════
+ *  CONTACT / OPTIONS
+ * ═══════════════════════════════════════════════ */
+
+const WP_API_URL = process.env.NEXT_PUBLIC_WP_API_URL || 'https://api.qpweb.io.vn';
+
+export interface ContactOptions {
+  hotline: string;
+  zalo: string;
+  email: string;
+}
+
+export async function getContactOptions(): Promise<ContactOptions> {
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    const res = await fetch(`${WP_API_URL}/wp-json/qpweb/v1/options`, {
+      cache: 'no-store',
+      signal: controller.signal,
+    });
+    clearTimeout(timeout);
+    if (!res.ok) return { hotline: '', zalo: '', email: '' };
+    return (await res.json()) as ContactOptions;
+  } catch {
+    return { hotline: '', zalo: '', email: '' };
+  }
+}
+
+export async function submitContactForm(data: Record<string, string>): Promise<{ success: boolean; message: string }> {
+  try {
+    const res = await fetch(`${WP_API_URL}/wp-json/qpweb/v1/contact`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    return (await res.json()) as { success: boolean; message: string };
+  } catch {
+    return { success: false, message: 'Lỗi kết nối. Vui lòng thử lại.' };
+  }
+}
