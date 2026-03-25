@@ -346,6 +346,8 @@ testimonial: {
 | 6 | Featured image URL không có | `_embed=1` + `_embedded['wp:featuredmedia']` |
 | 7 | Taxonomy term names | `_embed=1` + `_embedded['wp:term']` |
 | 8 | WordPress encode `&` → `&#038;` | `stripHtml()` phải decode HTML entities |
+| 9 | REST API `401 rest_cannot_edit` khi write meta | **KHÔNG dùng REST API để import data!** Tạo PHP plugin import, upload + activate → tự import. Dùng `update_field()` trực tiếp |
+| 10 | Next.js Image slider không đổi ảnh | Thêm `key={activeIndex}` vào `<Image>` để force React remount |
 
 ---
 
