@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import { useSiteOptions } from '@/lib/SiteOptionsContext';
 
 const faqs = [
   {
@@ -37,6 +38,7 @@ const trustItems = [
 ];
 
 export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: string; answer: string }[] }) {
+  const { hotline, zalo } = useSiteOptions();
   const activeFaqs = wpFaqs.length > 0 ? wpFaqs.map(f => ({ q: f.question, a: f.answer })) : faqs;
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const sectionRef = useRef<HTMLElement>(null);
@@ -184,7 +186,7 @@ export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: strin
 
                 <div className="space-y-4">
                   <a
-                    href="https://zalo.me/0901234567"
+                    href={`https://zalo.me/${zalo.replace(/\s/g, '')}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary w-full justify-center text-base"
@@ -200,7 +202,7 @@ export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: strin
                     className="btn-secondary w-full justify-center border-white/20 text-white hover:border-white/50 hover:text-white"
                     aria-label="Hoặc gọi điện trực tiếp"
                   >
-                    📞 Gọi 0901 234 567
+                    📞 Gọi {hotline}
                   </button>
                 </div>
 

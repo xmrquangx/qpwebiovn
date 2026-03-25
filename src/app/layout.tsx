@@ -1,6 +1,8 @@
 import React from 'react';
 import type { Metadata, Viewport } from 'next';
 import '../styles/tailwind.css';
+import { getContactOptions } from '@/lib/wordpress/services';
+import { SiteOptionsProvider } from '@/lib/SiteOptionsContext';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -23,16 +25,20 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const options = await getContactOptions();
+
   return (
     <html lang="vi">
       <body>
-        {children}
-</body>
+        <SiteOptionsProvider options={options}>
+          {children}
+        </SiteOptionsProvider>
+      </body>
     </html>
   );
 }

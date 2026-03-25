@@ -1,4 +1,12 @@
+'use client';
+
+import { useSiteOptions } from '@/lib/SiteOptionsContext';
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://qpweb.io.vn';
+
 export function Organization() {
+  const { hotline, zalo } = useSiteOptions();
+  const phone = hotline.replace(/\s/g, '');
   return (
     <script
       type="application/ld+json"
@@ -7,11 +15,11 @@ export function Organization() {
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "WebAgencyVN",
-          "url": "https://webagencyvn.com",
-          "logo": "https://webagencyvn.com/assets/images/app_logo.png",
+          "url": SITE_URL,
+          "logo": `${SITE_URL}/assets/images/app_logo.png`,
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+84-901-234-567",
+            "telephone": `+84-${phone.slice(1)}`,
             "contactType": "customer service",
             "areaServed": "VN",
             "availableLanguage": "Vietnamese"
@@ -19,7 +27,7 @@ export function Organization() {
           "sameAs": [
             "https://facebook.com/webagencyvn",
             "https://youtube.com/webagencyvn",
-            "https://zalo.me/0901234567"
+            `https://zalo.me/${zalo.replace(/\s/g, '')}`
           ]
         })
       }}
@@ -37,7 +45,7 @@ export function WebPage() {
           "@type": "WebPage",
           "name": "WebAgencyVN — Website Đẹp Lên Sóng Trong 5 Ngày",
           "description": "Freelancer thiết kế website WordPress Flatsome cho cá nhân và doanh nghiệp nhỏ tại Việt Nam.",
-          "url": "https://webagencyvn.com",
+          "url": SITE_URL,
           "inLanguage": "vi-VN"
         })
       }}

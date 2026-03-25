@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useSiteOptions } from '@/lib/SiteOptionsContext';
 
 export default function ZaloFloat() {
+  const { zalo } = useSiteOptions();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -14,7 +16,7 @@ export default function ZaloFloat() {
 
   return (
     <a
-      href="https://zalo.me/0901234567"
+      href={`https://zalo.me/${zalo.replace(/\s/g, '')}`}
       target="_blank"
       rel="noopener noreferrer"
       className="zalo-float"
