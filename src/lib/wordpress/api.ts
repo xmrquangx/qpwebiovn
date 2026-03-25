@@ -9,13 +9,12 @@ const WP_API_URL =
 const API_BASE = `${WP_API_URL}/wp-json/wp/v2`;
 
 interface FetchOptions {
-  revalidate?: number;
   tags?: string[];
 }
 
 /**
- * Generic fetcher that wraps Next.js `fetch` with ISR caching.
- * Returns `null` when the endpoint returns 404 or throws non-ok.
+ * Generic fetcher — no caching, always fresh data from WP.
+ * Returns `null` when the endpoint returns non-ok or times out.
  */
 export async function wpFetch<T>(
   endpoint: string,
@@ -30,17 +29,29 @@ export async function wpFetch<T>(
     url.searchParams.set(k, String(v)),
   );
 
+  const finalUrl = url.toString();
+  console.log(`[wpFetch] Fetching: ${finalUrl}`);
+
   try {
-    const res = await fetch(url.toString(), {
-      next: {
-        revalidate: opts.revalidate ?? 60, // ISR 60s default
-        tags: opts.tags,
-      },
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000); // 8s timeout
+
+    const res = await fetch(finalUrl, {
+      cache: 'no-store',
+      signal: controller.signal,
+      next: { tags: opts.tags },
     });
-    if (!res.ok) return null;
-    return (await res.json()) as T;
-  } catch {
-    console.error(`[wpFetch] Failed: ${url.toString()}`);
+    clearTimeout(timeout);
+
+    if (!res.ok) {
+      console.error(`[wpFetch] HTTP ${res.status}: ${finalUrl}`);
+      return null;
+    }
+    const data = (await res.json()) as T;
+    console.log(`[wpFetch] Success: ${endpoint} → ${Array.isArray(data) ? data.length + ' items' : 'object'}`);
+    return data;
+  } catch (err) {
+    console.error(`[wpFetch] Failed: ${finalUrl}`, err instanceof Error ? err.message : err);
     return null;
   }
 }
