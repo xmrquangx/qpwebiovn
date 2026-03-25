@@ -9,6 +9,7 @@ import type {
   WPTerm,
   Service,
   PortfolioItem,
+  PortfolioDetail,
   PricingPlan,
   Addon,
   Testimonial,
@@ -136,6 +137,67 @@ export async function getPortfolioCategories(): Promise<string[]> {
   const terms = await wpFetch<WPTerm[]>('portfolio-cat', {}, { tags: ['portfolio-cat'] });
   if (!terms || !Array.isArray(terms)) return [];
   return terms.map((t) => t.name);
+}
+
+export async function getPortfolioBySlug(slug: string): Promise<PortfolioDetail | null> {
+  const posts = await wpFetch<WPPost[]>('portfolio', {
+    slug,
+    per_page: '1',
+  }, { tags: [`portfolio-${slug}`] });
+
+  if (!posts || !Array.isArray(posts) || posts.length === 0) return null;
+  const p = posts[0];
+  const acf = p.acf || {};
+  const meta = p.meta || {};
+
+  // Featured image
+  let imgUrl = getFeaturedImageUrl(p);
+  if (!imgUrl) {
+    const imgField = acf.portfolio_image || meta.portfolio_image;
+    imgUrl = typeof imgField === 'string' ? imgField : '';
+  }
+
+  // Taxonomy tag
+  const termNames = getEmbeddedTerms(p, 0);
+  const tag = termNames[0] || '';
+
+  // Gallery from ACF repeater
+  const galleryRaw = Array.isArray(acf.portfolio_gallery) ? acf.portfolio_gallery : [];
+  const gallery = galleryRaw.map((item: Record<string, unknown>) => {
+    const img = item.gallery_image;
+    const src = typeof img === 'string' ? img
+      : typeof img === 'object' && img !== null ? String((img as Record<string, unknown>).url || '') : '';
+    return {
+      src,
+      alt: stripHtml(p.title.rendered),
+      caption: String(item.gallery_caption || ''),
+    };
+  }).filter((g: { src: string }) => g.src);
+
+  return {
+    src: imgUrl,
+    alt: stripHtml(p.title.rendered),
+    title: stripHtml(p.title.rendered),
+    slug: p.slug,
+    tag,
+    tagColor: String(acf.portfolio_tag_color || meta.portfolio_tag_color || 'bg-blue-100 text-blue-700'),
+    client: String(acf.portfolio_client || meta.portfolio_client || ''),
+    result: String(acf.portfolio_result || meta.portfolio_result || ''),
+    tech: repeaterToStrings(acf.portfolio_tech, 'tech_item'),
+    content: p.content?.rendered || '',
+    location: String(acf.portfolio_location || meta.portfolio_location || ''),
+    duration: String(acf.portfolio_duration || meta.portfolio_duration || ''),
+    year: String(acf.portfolio_year || meta.portfolio_year || ''),
+    challenge: String(acf.portfolio_challenge || meta.portfolio_challenge || ''),
+    solution: String(acf.portfolio_solution || meta.portfolio_solution || ''),
+    gallery,
+    testimonial: {
+      text: String(acf.portfolio_testimonial_quote || meta.portfolio_testimonial_quote || ''),
+      author: String(acf.portfolio_testimonial_name || meta.portfolio_testimonial_name || ''),
+      role: String(acf.portfolio_testimonial_role || meta.portfolio_testimonial_role || ''),
+    },
+    demoUrl: String(acf.portfolio_demo_url || meta.portfolio_demo_url || '#'),
+  };
 }
 
 /* ═══════════════════════════════════════════════

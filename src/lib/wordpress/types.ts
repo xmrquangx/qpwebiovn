@@ -56,6 +56,19 @@ export interface PortfolioItem {
   slug: string;
 }
 
+export interface PortfolioDetail extends PortfolioItem {
+  content: string;
+  location: string;
+  duration: string;
+  year: string;
+  challenge: string;
+  solution: string;
+  gallery: { src: string; alt: string; caption: string }[];
+  testimonial: { text: string; author: string; role: string };
+  demoUrl: string;
+}
+
+
 export interface PricingPlan {
   name: string;
   price: string;
