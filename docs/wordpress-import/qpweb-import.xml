@@ -1,0 +1,1158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+  xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+  <title>QPWeb Import</title>
+  <link>https://api.qpweb.io.vn</link>
+  <wp:wxr_version>1.2</wp:wxr_version>
+
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[service-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[wordpress]]></wp:term_slug>
+    <wp:term_name><![CDATA[WordPress]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[service-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[seo]]></wp:term_slug>
+    <wp:term_name><![CDATA[SEO]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[service-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[zalo]]></wp:term_slug>
+    <wp:term_name><![CDATA[Zalo]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[service-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[e-commerce]]></wp:term_slug>
+    <wp:term_name><![CDATA[E-commerce]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[service-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[booking]]></wp:term_slug>
+    <wp:term_name><![CDATA[Booking]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[service-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[b-o-tr-]]></wp:term_slug>
+    <wp:term_name><![CDATA[Bảo trì]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[portfolio-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[spa-beauty]]></wp:term_slug>
+    <wp:term_name><![CDATA[Spa & Beauty]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[portfolio-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[f-b]]></wp:term_slug>
+    <wp:term_name><![CDATA[F&B]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[portfolio-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[nhi-p-nh]]></wp:term_slug>
+    <wp:term_name><![CDATA[Nhiếp ảnh]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[portfolio-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[coaching]]></wp:term_slug>
+    <wp:term_name><![CDATA[Coaching]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[portfolio-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[th-i-trang]]></wp:term_slug>
+    <wp:term_name><![CDATA[Thời trang]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[portfolio-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[d-ch-v]]></wp:term_slug>
+    <wp:term_name><![CDATA[Dịch vụ]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[portfolio-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[doanh-nghi-p]]></wp:term_slug>
+    <wp:term_name><![CDATA[Doanh nghiệp]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[review-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[r-coaching]]></wp:term_slug>
+    <wp:term_name><![CDATA[Coaching]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[review-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[r-f-b]]></wp:term_slug>
+    <wp:term_name><![CDATA[F&B]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[review-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[r-nhi-p-nh]]></wp:term_slug>
+    <wp:term_name><![CDATA[Nhiếp ảnh]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[review-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[r-d-ch-v]]></wp:term_slug>
+    <wp:term_name><![CDATA[Dịch vụ]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[review-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[r-spa-beauty]]></wp:term_slug>
+    <wp:term_name><![CDATA[Spa & Beauty]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[review-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[r-content-creator]]></wp:term_slug>
+    <wp:term_name><![CDATA[Content Creator]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[faq-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[gia]]></wp:term_slug>
+    <wp:term_name><![CDATA[Giá]]></wp:term_name>
+  </wp:term>
+  <wp:term>
+    <wp:term_taxonomy><![CDATA[faq-cat]]></wp:term_taxonomy>
+    <wp:term_slug><![CDATA[quy-trinh]]></wp:term_slug>
+    <wp:term_name><![CDATA[Quy trình]]></wp:term_name>
+  </wp:term>
+
+
+    <item>
+      <title><![CDATA[Thiết kế Website WordPress Flatsome]]></title>
+      <wp:post_name><![CDATA[thiet-ke-website-wordpress-flatsome]]></wp:post_name>
+      <wp:post_id>101</wp:post_id>
+      <wp:post_type><![CDATA[service]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>1</wp:menu_order>
+      <category domain="service-cat" nicename="wordpress"><![CDATA[WordPress]]></category>
+      <wp:postmeta><wp:meta_key>service_num</wp:meta_key><wp:meta_value><![CDATA[01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_num</wp:meta_key><wp:meta_value><![CDATA[field_service_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_short_desc</wp:meta_key><wp:meta_value><![CDATA[Xây dựng website chuyên nghiệp trên nền tảng WordPress với theme Flatsome — tối ưu tốc độ, dễ quản trị, không cần biết code.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_service_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_tag</wp:meta_key><wp:meta_value><![CDATA[WordPress]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_tag</wp:meta_key><wp:meta_value><![CDATA[field_service_tag]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-blue-100 text-blue-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_service_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_color</wp:meta_key><wp:meta_value><![CDATA[text-blue-brand]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_color</wp:meta_key><wp:meta_value><![CDATA[field_service_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_bg</wp:meta_key><wp:meta_value><![CDATA[bg-blue-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_bg</wp:meta_key><wp:meta_value><![CDATA[field_service_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features</wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features</wp:meta_key><wp:meta_value><![CDATA[field_service_features]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[Giao diện tuỳ chỉnh theo brand]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[Responsive 100% mobile-first]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[Tốc độ tải trang < 3 giây]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[Dễ tự cập nhật nội dung]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[Tích hợp Google Analytics]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[SEO Local & Google My Business]]></title>
+      <wp:post_name><![CDATA[seo-local-google-my-business]]></wp:post_name>
+      <wp:post_id>102</wp:post_id>
+      <wp:post_type><![CDATA[service]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>2</wp:menu_order>
+      <category domain="service-cat" nicename="seo"><![CDATA[SEO]]></category>
+      <wp:postmeta><wp:meta_key>service_num</wp:meta_key><wp:meta_value><![CDATA[02]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_num</wp:meta_key><wp:meta_value><![CDATA[field_service_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_short_desc</wp:meta_key><wp:meta_value><![CDATA[Tối ưu website xuất hiện top Google tìm kiếm địa phương.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_service_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_tag</wp:meta_key><wp:meta_value><![CDATA[SEO]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_tag</wp:meta_key><wp:meta_value><![CDATA[field_service_tag]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-green-100 text-green-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_service_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_color</wp:meta_key><wp:meta_value><![CDATA[text-primary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_color</wp:meta_key><wp:meta_value><![CDATA[field_service_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_bg</wp:meta_key><wp:meta_value><![CDATA[bg-orange-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_bg</wp:meta_key><wp:meta_value><![CDATA[field_service_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features</wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features</wp:meta_key><wp:meta_value><![CDATA[field_service_features]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[Nghiên cứu từ khoá địa phương]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[Tối ưu on-page SEO]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[Cài đặt Google My Business]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[Schema markup địa phương]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[Báo cáo thứ hạng hàng tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Tích hợp Zalo OA & Live Chat]]></title>
+      <wp:post_name><![CDATA[tich-hop-zalo-oa-live-chat]]></wp:post_name>
+      <wp:post_id>103</wp:post_id>
+      <wp:post_type><![CDATA[service]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>3</wp:menu_order>
+      <category domain="service-cat" nicename="zalo"><![CDATA[Zalo]]></category>
+      <wp:postmeta><wp:meta_key>service_num</wp:meta_key><wp:meta_value><![CDATA[03]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_num</wp:meta_key><wp:meta_value><![CDATA[field_service_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_short_desc</wp:meta_key><wp:meta_value><![CDATA[Kết nối Zalo Official Account vào website — khách hàng nhắn tin trực tiếp.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_service_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_tag</wp:meta_key><wp:meta_value><![CDATA[Zalo]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_tag</wp:meta_key><wp:meta_value><![CDATA[field_service_tag]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-blue-100 text-blue-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_service_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_color</wp:meta_key><wp:meta_value><![CDATA[text-blue-brand]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_color</wp:meta_key><wp:meta_value><![CDATA[field_service_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_bg</wp:meta_key><wp:meta_value><![CDATA[bg-blue-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_bg</wp:meta_key><wp:meta_value><![CDATA[field_service_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features</wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features</wp:meta_key><wp:meta_value><![CDATA[field_service_features]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[Nút Zalo nổi trên website]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[Zalo OA tích hợp chat]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[Form liên hệ tự động]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[Thông báo tin nhắn realtime]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[Hỗ trợ cài đặt Zalo OA]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Website Thương Mại Điện Tử]]></title>
+      <wp:post_name><![CDATA[website-thuong-mai-dien-tu]]></wp:post_name>
+      <wp:post_id>104</wp:post_id>
+      <wp:post_type><![CDATA[service]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>4</wp:menu_order>
+      <category domain="service-cat" nicename="e-commerce"><![CDATA[E-commerce]]></category>
+      <wp:postmeta><wp:meta_key>service_num</wp:meta_key><wp:meta_value><![CDATA[04]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_num</wp:meta_key><wp:meta_value><![CDATA[field_service_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_short_desc</wp:meta_key><wp:meta_value><![CDATA[Xây dựng cửa hàng online với WooCommerce.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_service_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_tag</wp:meta_key><wp:meta_value><![CDATA[E-commerce]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_tag</wp:meta_key><wp:meta_value><![CDATA[field_service_tag]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-purple-100 text-purple-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_service_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_color</wp:meta_key><wp:meta_value><![CDATA[text-primary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_color</wp:meta_key><wp:meta_value><![CDATA[field_service_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_bg</wp:meta_key><wp:meta_value><![CDATA[bg-orange-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_bg</wp:meta_key><wp:meta_value><![CDATA[field_service_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features</wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features</wp:meta_key><wp:meta_value><![CDATA[field_service_features]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[WooCommerce đầy đủ tính năng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[Thanh toán VNPay / MoMo]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[Quản lý kho hàng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[Tích hợp vận chuyển]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[Báo cáo doanh thu]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Đặt lịch & Booking Online]]></title>
+      <wp:post_name><![CDATA[dat-lich-booking-online]]></wp:post_name>
+      <wp:post_id>105</wp:post_id>
+      <wp:post_type><![CDATA[service]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>5</wp:menu_order>
+      <category domain="service-cat" nicename="booking"><![CDATA[Booking]]></category>
+      <wp:postmeta><wp:meta_key>service_num</wp:meta_key><wp:meta_value><![CDATA[05]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_num</wp:meta_key><wp:meta_value><![CDATA[field_service_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_short_desc</wp:meta_key><wp:meta_value><![CDATA[Hệ thống đặt lịch hẹn tự động cho spa, phòng khám, salon, coach.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_service_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_tag</wp:meta_key><wp:meta_value><![CDATA[Booking]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_tag</wp:meta_key><wp:meta_value><![CDATA[field_service_tag]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-amber-100 text-amber-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_service_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_color</wp:meta_key><wp:meta_value><![CDATA[text-blue-brand]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_color</wp:meta_key><wp:meta_value><![CDATA[field_service_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_bg</wp:meta_key><wp:meta_value><![CDATA[bg-blue-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_bg</wp:meta_key><wp:meta_value><![CDATA[field_service_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features</wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features</wp:meta_key><wp:meta_value><![CDATA[field_service_features]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[Lịch đặt hẹn tự động]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[Nhắc nhở qua Zalo / SMS]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[Quản lý lịch làm việc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[Xác nhận đặt lịch tức thì]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[Tích hợp Google Calendar]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Bảo trì & Hỗ trợ Website]]></title>
+      <wp:post_name><![CDATA[bao-tri-ho-tro-website]]></wp:post_name>
+      <wp:post_id>106</wp:post_id>
+      <wp:post_type><![CDATA[service]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>6</wp:menu_order>
+      <category domain="service-cat" nicename="b-o-tr-"><![CDATA[Bảo trì]]></category>
+      <wp:postmeta><wp:meta_key>service_num</wp:meta_key><wp:meta_value><![CDATA[06]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_num</wp:meta_key><wp:meta_value><![CDATA[field_service_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_short_desc</wp:meta_key><wp:meta_value><![CDATA[Dịch vụ bảo trì định kỳ, cập nhật plugin, backup dữ liệu, sửa lỗi nhanh.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_service_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_tag</wp:meta_key><wp:meta_value><![CDATA[Bảo trì]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_tag</wp:meta_key><wp:meta_value><![CDATA[field_service_tag]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-gray-100 text-gray-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_service_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_color</wp:meta_key><wp:meta_value><![CDATA[text-primary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_color</wp:meta_key><wp:meta_value><![CDATA[field_service_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_bg</wp:meta_key><wp:meta_value><![CDATA[bg-orange-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_bg</wp:meta_key><wp:meta_value><![CDATA[field_service_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features</wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features</wp:meta_key><wp:meta_value><![CDATA[field_service_features]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[Backup dữ liệu hàng tuần]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[Cập nhật WordPress & plugin]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[Sửa lỗi trong 24h]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[Báo cáo uptime hàng tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>service_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[Hỗ trợ qua Zalo 8h-22h]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_service_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_service_feature_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Spa Hương Thơm]]></title>
+      <wp:post_name><![CDATA[spa-huong-thom]]></wp:post_name>
+      <wp:post_id>107</wp:post_id>
+      <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>1</wp:menu_order>
+      <category domain="portfolio-cat" nicename="spa-beauty"><![CDATA[Spa & Beauty]]></category>
+      <wp:postmeta><wp:meta_key>portfolio_client</wp:meta_key><wp:meta_value><![CDATA[Spa Hương Thơm - TP.HCM]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_client</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_client]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_result</wp:meta_key><wp:meta_value><![CDATA[+40% lượt đặt lịch qua web]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_result</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_result]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-pink-100 text-pink-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech</wp:meta_key><wp:meta_value><![CDATA[3]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_0_tech_item</wp:meta_key><wp:meta_value><![CDATA[WordPress]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_0_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_1_tech_item</wp:meta_key><wp:meta_value><![CDATA[Flatsome]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_1_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_2_tech_item</wp:meta_key><wp:meta_value><![CDATA[Booking]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_2_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[The Brew House]]></title>
+      <wp:post_name><![CDATA[the-brew-house]]></wp:post_name>
+      <wp:post_id>108</wp:post_id>
+      <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>2</wp:menu_order>
+      <category domain="portfolio-cat" nicename="f-b"><![CDATA[F&B]]></category>
+      <wp:postmeta><wp:meta_key>portfolio_client</wp:meta_key><wp:meta_value><![CDATA[The Brew House - Hà Nội]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_client</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_client]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_result</wp:meta_key><wp:meta_value><![CDATA[Top 3 Google "cà phê Hoàn Kiếm"]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_result</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_result]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-amber-100 text-amber-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech</wp:meta_key><wp:meta_value><![CDATA[3]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_0_tech_item</wp:meta_key><wp:meta_value><![CDATA[WordPress]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_0_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_1_tech_item</wp:meta_key><wp:meta_value><![CDATA[SEO Local]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_1_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_2_tech_item</wp:meta_key><wp:meta_value><![CDATA[Zalo]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_2_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Minh Tuấn Photo]]></title>
+      <wp:post_name><![CDATA[minh-tuan-photo]]></wp:post_name>
+      <wp:post_id>109</wp:post_id>
+      <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>3</wp:menu_order>
+      <category domain="portfolio-cat" nicename="nhi-p-nh"><![CDATA[Nhiếp ảnh]]></category>
+      <wp:postmeta><wp:meta_key>portfolio_client</wp:meta_key><wp:meta_value><![CDATA[Minh Tuấn Photography - Đà Nẵng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_client</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_client]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_result</wp:meta_key><wp:meta_value><![CDATA[+60% khách doanh nghiệp mới]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_result</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_result]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-gray-100 text-gray-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech</wp:meta_key><wp:meta_value><![CDATA[3]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_0_tech_item</wp:meta_key><wp:meta_value><![CDATA[WordPress]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_0_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_1_tech_item</wp:meta_key><wp:meta_value><![CDATA[Portfolio]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_1_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_2_tech_item</wp:meta_key><wp:meta_value><![CDATA[Gallery]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_2_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Coaching Thành Công]]></title>
+      <wp:post_name><![CDATA[coaching-thanh-cong]]></wp:post_name>
+      <wp:post_id>110</wp:post_id>
+      <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>4</wp:menu_order>
+      <category domain="portfolio-cat" nicename="coaching"><![CDATA[Coaching]]></category>
+      <wp:postmeta><wp:meta_key>portfolio_client</wp:meta_key><wp:meta_value><![CDATA[Coaching Thành Công - TP.HCM]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_client</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_client]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_result</wp:meta_key><wp:meta_value><![CDATA[2x học viên đăng ký online]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_result</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_result]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-blue-100 text-blue-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech</wp:meta_key><wp:meta_value><![CDATA[3]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_0_tech_item</wp:meta_key><wp:meta_value><![CDATA[WordPress]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_0_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_1_tech_item</wp:meta_key><wp:meta_value><![CDATA[LMS]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_1_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_2_tech_item</wp:meta_key><wp:meta_value><![CDATA[Zalo OA]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_2_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Thời Trang Linh]]></title>
+      <wp:post_name><![CDATA[thoi-trang-linh]]></wp:post_name>
+      <wp:post_id>111</wp:post_id>
+      <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>5</wp:menu_order>
+      <category domain="portfolio-cat" nicename="th-i-trang"><![CDATA[Thời trang]]></category>
+      <wp:postmeta><wp:meta_key>portfolio_client</wp:meta_key><wp:meta_value><![CDATA[Thời Trang Linh - Hải Phòng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_client</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_client]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_result</wp:meta_key><wp:meta_value><![CDATA[30% đơn hàng từ website]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_result</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_result]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-purple-100 text-purple-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech</wp:meta_key><wp:meta_value><![CDATA[3]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_0_tech_item</wp:meta_key><wp:meta_value><![CDATA[WooCommerce]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_0_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_1_tech_item</wp:meta_key><wp:meta_value><![CDATA[SEO]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_1_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_2_tech_item</wp:meta_key><wp:meta_value><![CDATA[Zalo]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_2_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Điện Lạnh Hoàng Phát]]></title>
+      <wp:post_name><![CDATA[dien-lanh-hoang]]></wp:post_name>
+      <wp:post_id>112</wp:post_id>
+      <wp:post_type><![CDATA[portfolio]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>6</wp:menu_order>
+      <category domain="portfolio-cat" nicename="d-ch-v"><![CDATA[Dịch vụ]]></category>
+      <wp:postmeta><wp:meta_key>portfolio_client</wp:meta_key><wp:meta_value><![CDATA[Điện Lạnh Hoàng Phát - Cần Thơ]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_client</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_client]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_result</wp:meta_key><wp:meta_value><![CDATA[30% đơn từ website trong 2 tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_result</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_result]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-green-100 text-green-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech</wp:meta_key><wp:meta_value><![CDATA[3]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_0_tech_item</wp:meta_key><wp:meta_value><![CDATA[WordPress]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_0_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_1_tech_item</wp:meta_key><wp:meta_value><![CDATA[Booking]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_1_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>portfolio_tech_2_tech_item</wp:meta_key><wp:meta_value><![CDATA[SEO Local]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_portfolio_tech_2_tech_item</wp:meta_key><wp:meta_value><![CDATA[field_portfolio_tech_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Basic]]></title>
+      <wp:post_name><![CDATA[basic]]></wp:post_name>
+      <wp:post_id>113</wp:post_id>
+      <wp:post_type><![CDATA[goi-gia]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>1</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>pricing_price</wp:meta_key><wp:meta_value><![CDATA[3.500.000]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_price</wp:meta_key><wp:meta_value><![CDATA[field_pricing_price]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_short_desc</wp:meta_key><wp:meta_value><![CDATA[Phù hợp cho cá nhân, freelancer, coach mới bắt đầu.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_pricing_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_pages</wp:meta_key><wp:meta_value><![CDATA[5 trang]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_pages</wp:meta_key><wp:meta_value><![CDATA[field_pricing_pages]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_design</wp:meta_key><wp:meta_value><![CDATA[Template Flatsome có sẵn]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_design</wp:meta_key><wp:meta_value><![CDATA[field_pricing_design]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_seo</wp:meta_key><wp:meta_value><![CDATA[SEO on-page cơ bản]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_seo</wp:meta_key><wp:meta_value><![CDATA[field_pricing_seo]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_warranty</wp:meta_key><wp:meta_value><![CDATA[Bảo hành 3 tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_warranty</wp:meta_key><wp:meta_value><![CDATA[field_pricing_warranty]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_is_popular</wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_is_popular</wp:meta_key><wp:meta_value><![CDATA[field_pricing_is_popular]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_cta</wp:meta_key><wp:meta_value><![CDATA[Chọn Basic]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_cta</wp:meta_key><wp:meta_value><![CDATA[field_pricing_cta]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_num</wp:meta_key><wp:meta_value><![CDATA[01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_num</wp:meta_key><wp:meta_value><![CDATA[field_pricing_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_color</wp:meta_key><wp:meta_value><![CDATA[text-blue-brand]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_color</wp:meta_key><wp:meta_value><![CDATA[field_pricing_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_bg</wp:meta_key><wp:meta_value><![CDATA[bg-blue-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_bg</wp:meta_key><wp:meta_value><![CDATA[field_pricing_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features</wp:meta_key><wp:meta_value><![CDATA[7]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features</wp:meta_key><wp:meta_value><![CDATA[field_pricing_features]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[5 trang nội dung]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[Thiết kế template Flatsome]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[Responsive mobile 100%]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[Form liên hệ + nút Zalo]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[SEO on-page cơ bản]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_5_feature_item</wp:meta_key><wp:meta_value><![CDATA[Bảo hành 3 tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_5_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_6_feature_item</wp:meta_key><wp:meta_value><![CDATA[Hỗ trợ qua Zalo]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_6_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_not_included</wp:meta_key><wp:meta_value><![CDATA[3]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_not_included</wp:meta_key><wp:meta_value><![CDATA[field_pricing_not_included]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_not_included_0_not_included_item</wp:meta_key><wp:meta_value><![CDATA[SEO local & Google My Business]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_not_included_0_not_included_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_not_included_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_not_included_1_not_included_item</wp:meta_key><wp:meta_value><![CDATA[WooCommerce / đặt lịch]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_not_included_1_not_included_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_not_included_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_not_included_2_not_included_item</wp:meta_key><wp:meta_value><![CDATA[Báo cáo tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_not_included_2_not_included_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_not_included_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Standard]]></title>
+      <wp:post_name><![CDATA[standard]]></wp:post_name>
+      <wp:post_id>114</wp:post_id>
+      <wp:post_type><![CDATA[goi-gia]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>2</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>pricing_price</wp:meta_key><wp:meta_value><![CDATA[6.500.000]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_price</wp:meta_key><wp:meta_value><![CDATA[field_pricing_price]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_short_desc</wp:meta_key><wp:meta_value><![CDATA[Lý tưởng cho quán cà phê, spa, cửa hàng, dịch vụ địa phương.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_pricing_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_pages</wp:meta_key><wp:meta_value><![CDATA[10 trang]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_pages</wp:meta_key><wp:meta_value><![CDATA[field_pricing_pages]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_design</wp:meta_key><wp:meta_value><![CDATA[Thiết kế tuỳ chỉnh theo brand]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_design</wp:meta_key><wp:meta_value><![CDATA[field_pricing_design]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_seo</wp:meta_key><wp:meta_value><![CDATA[SEO local + Google My Business]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_seo</wp:meta_key><wp:meta_value><![CDATA[field_pricing_seo]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_warranty</wp:meta_key><wp:meta_value><![CDATA[Bảo hành 6 tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_warranty</wp:meta_key><wp:meta_value><![CDATA[field_pricing_warranty]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_is_popular</wp:meta_key><wp:meta_value><![CDATA[1]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_is_popular</wp:meta_key><wp:meta_value><![CDATA[field_pricing_is_popular]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_cta</wp:meta_key><wp:meta_value><![CDATA[Chọn Standard]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_cta</wp:meta_key><wp:meta_value><![CDATA[field_pricing_cta]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_num</wp:meta_key><wp:meta_value><![CDATA[02]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_num</wp:meta_key><wp:meta_value><![CDATA[field_pricing_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_color</wp:meta_key><wp:meta_value><![CDATA[text-primary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_color</wp:meta_key><wp:meta_value><![CDATA[field_pricing_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_bg</wp:meta_key><wp:meta_value><![CDATA[bg-orange-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_bg</wp:meta_key><wp:meta_value><![CDATA[field_pricing_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features</wp:meta_key><wp:meta_value><![CDATA[7]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features</wp:meta_key><wp:meta_value><![CDATA[field_pricing_features]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[10 trang nội dung]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[Thiết kế tuỳ chỉnh theo brand]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[Responsive + tốc độ tối ưu]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[Zalo OA + Live chat]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[SEO local + Google My Business]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_5_feature_item</wp:meta_key><wp:meta_value><![CDATA[Bảo hành 6 tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_5_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_6_feature_item</wp:meta_key><wp:meta_value><![CDATA[Hướng dẫn quản trị]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_6_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_not_included</wp:meta_key><wp:meta_value><![CDATA[2]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_not_included</wp:meta_key><wp:meta_value><![CDATA[field_pricing_not_included]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_not_included_0_not_included_item</wp:meta_key><wp:meta_value><![CDATA[WooCommerce / đặt lịch online]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_not_included_0_not_included_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_not_included_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_not_included_1_not_included_item</wp:meta_key><wp:meta_value><![CDATA[Báo cáo tháng + tư vấn chiến lược]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_not_included_1_not_included_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_not_included_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Pro]]></title>
+      <wp:post_name><![CDATA[pro]]></wp:post_name>
+      <wp:post_id>115</wp:post_id>
+      <wp:post_type><![CDATA[goi-gia]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>3</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>pricing_price</wp:meta_key><wp:meta_value><![CDATA[12.000.000]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_price</wp:meta_key><wp:meta_value><![CDATA[field_pricing_price]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_short_desc</wp:meta_key><wp:meta_value><![CDATA[Dành cho doanh nghiệp SME, thương mại điện tử, website nhiều tính năng.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_pricing_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_pages</wp:meta_key><wp:meta_value><![CDATA[Không giới hạn]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_pages</wp:meta_key><wp:meta_value><![CDATA[field_pricing_pages]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_design</wp:meta_key><wp:meta_value><![CDATA[Thiết kế premium 100% custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_design</wp:meta_key><wp:meta_value><![CDATA[field_pricing_design]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_seo</wp:meta_key><wp:meta_value><![CDATA[SEO toàn diện + blog content]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_seo</wp:meta_key><wp:meta_value><![CDATA[field_pricing_seo]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_warranty</wp:meta_key><wp:meta_value><![CDATA[Bảo hành 12 tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_warranty</wp:meta_key><wp:meta_value><![CDATA[field_pricing_warranty]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_is_popular</wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_is_popular</wp:meta_key><wp:meta_value><![CDATA[field_pricing_is_popular]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_cta</wp:meta_key><wp:meta_value><![CDATA[Chọn Pro]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_cta</wp:meta_key><wp:meta_value><![CDATA[field_pricing_cta]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_num</wp:meta_key><wp:meta_value><![CDATA[03]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_num</wp:meta_key><wp:meta_value><![CDATA[field_pricing_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_color</wp:meta_key><wp:meta_value><![CDATA[text-blue-brand]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_color</wp:meta_key><wp:meta_value><![CDATA[field_pricing_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_bg</wp:meta_key><wp:meta_value><![CDATA[bg-blue-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_bg</wp:meta_key><wp:meta_value><![CDATA[field_pricing_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features</wp:meta_key><wp:meta_value><![CDATA[7]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features</wp:meta_key><wp:meta_value><![CDATA[field_pricing_features]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[Trang không giới hạn]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_0_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[Thiết kế premium 100% custom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_1_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[WooCommerce / đặt lịch online]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_2_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[Zalo OA + Email marketing]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_3_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[SEO toàn diện + blog content]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_4_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_5_feature_item</wp:meta_key><wp:meta_value><![CDATA[Bảo hành 12 tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_5_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_features_6_feature_item</wp:meta_key><wp:meta_value><![CDATA[Báo cáo tháng + tư vấn chiến lược]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_features_6_feature_item</wp:meta_key><wp:meta_value><![CDATA[field_pricing_feature_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>pricing_not_included</wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_pricing_not_included</wp:meta_key><wp:meta_value><![CDATA[field_pricing_not_included]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Thêm trang nội dung]]></title>
+      <wp:post_name><![CDATA[them-trang]]></wp:post_name>
+      <wp:post_id>116</wp:post_id>
+      <wp:post_type><![CDATA[addon]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>1</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>addon_price</wp:meta_key><wp:meta_value><![CDATA[300.000đ/trang]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_addon_price</wp:meta_key><wp:meta_value><![CDATA[field_addon_price]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>addon_short_desc</wp:meta_key><wp:meta_value><![CDATA[Thêm trang About, Blog, FAQ, v.v.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_addon_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_addon_short_desc]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Logo design]]></title>
+      <wp:post_name><![CDATA[logo-design]]></wp:post_name>
+      <wp:post_id>117</wp:post_id>
+      <wp:post_type><![CDATA[addon]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>2</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>addon_price</wp:meta_key><wp:meta_value><![CDATA[500.000đ]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_addon_price</wp:meta_key><wp:meta_value><![CDATA[field_addon_price]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>addon_short_desc</wp:meta_key><wp:meta_value><![CDATA[Thiết kế logo chuyên nghiệp theo brand]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_addon_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_addon_short_desc]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Bảo trì tháng]]></title>
+      <wp:post_name><![CDATA[bao-tri-thang]]></wp:post_name>
+      <wp:post_id>118</wp:post_id>
+      <wp:post_type><![CDATA[addon]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>3</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>addon_price</wp:meta_key><wp:meta_value><![CDATA[500.000đ/tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_addon_price</wp:meta_key><wp:meta_value><![CDATA[field_addon_price]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>addon_short_desc</wp:meta_key><wp:meta_value><![CDATA[Backup, update, sửa lỗi, hỗ trợ kỹ thuật]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_addon_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_addon_short_desc]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[SEO nâng cao]]></title>
+      <wp:post_name><![CDATA[seo-nang-cao]]></wp:post_name>
+      <wp:post_id>119</wp:post_id>
+      <wp:post_type><![CDATA[addon]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>4</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>addon_price</wp:meta_key><wp:meta_value><![CDATA[1.500.000đ/tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_addon_price</wp:meta_key><wp:meta_value><![CDATA[field_addon_price]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>addon_short_desc</wp:meta_key><wp:meta_value><![CDATA[Viết content, link building, báo cáo thứ hạng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_addon_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_addon_short_desc]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Email marketing]]></title>
+      <wp:post_name><![CDATA[email-marketing]]></wp:post_name>
+      <wp:post_id>120</wp:post_id>
+      <wp:post_type><![CDATA[addon]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>5</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>addon_price</wp:meta_key><wp:meta_value><![CDATA[800.000đ/tháng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_addon_price</wp:meta_key><wp:meta_value><![CDATA[field_addon_price]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>addon_short_desc</wp:meta_key><wp:meta_value><![CDATA[Thiết lập & gửi newsletter tự động]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_addon_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_addon_short_desc]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Chụp ảnh sản phẩm]]></title>
+      <wp:post_name><![CDATA[chup-anh-san-pham]]></wp:post_name>
+      <wp:post_id>121</wp:post_id>
+      <wp:post_type><![CDATA[addon]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>6</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>addon_price</wp:meta_key><wp:meta_value><![CDATA[Liên hệ]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_addon_price</wp:meta_key><wp:meta_value><![CDATA[field_addon_price]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>addon_short_desc</wp:meta_key><wp:meta_value><![CDATA[Chụp ảnh chuyên nghiệp cho website]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_addon_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_addon_short_desc]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Nguyễn Thị Lan Anh]]></title>
+      <wp:post_name><![CDATA[nguyen-thi-lan-anh]]></wp:post_name>
+      <wp:post_id>122</wp:post_id>
+      <wp:post_type><![CDATA[testimonial]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>1</wp:menu_order>
+      <category domain="review-cat" nicename="r-coaching"><![CDATA[Coaching]]></category>
+      <wp:postmeta><wp:meta_key>review_role</wp:meta_key><wp:meta_value><![CDATA[Coach Tư Duy Tích Cực]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_role</wp:meta_key><wp:meta_value><![CDATA[field_review_role]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_company</wp:meta_key><wp:meta_value><![CDATA[LanAnh Coaching]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_company</wp:meta_key><wp:meta_value><![CDATA[field_review_company]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_quote</wp:meta_key><wp:meta_value><![CDATA[Mình rất bất ngờ khi website xong đúng 5 ngày, đẹp hơn mình tưởng rất nhiều.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_quote</wp:meta_key><wp:meta_value><![CDATA[field_review_quote]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_stars</wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_stars</wp:meta_key><wp:meta_value><![CDATA[field_review_stars]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_result</wp:meta_key><wp:meta_value><![CDATA[+100% học viên mới từ Google]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_result</wp:meta_key><wp:meta_value><![CDATA[field_review_result]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_tag</wp:meta_key><wp:meta_value><![CDATA[Coaching]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_tag</wp:meta_key><wp:meta_value><![CDATA[field_review_tag]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-blue-100 text-blue-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_review_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_num</wp:meta_key><wp:meta_value><![CDATA[01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_num</wp:meta_key><wp:meta_value><![CDATA[field_review_num]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Trần Minh Khoa]]></title>
+      <wp:post_name><![CDATA[tran-minh-khoa]]></wp:post_name>
+      <wp:post_id>123</wp:post_id>
+      <wp:post_type><![CDATA[testimonial]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>2</wp:menu_order>
+      <category domain="review-cat" nicename="r-f-b"><![CDATA[F&B]]></category>
+      <wp:postmeta><wp:meta_key>review_role</wp:meta_key><wp:meta_value><![CDATA[Chủ quán The Brew House]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_role</wp:meta_key><wp:meta_value><![CDATA[field_review_role]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_company</wp:meta_key><wp:meta_value><![CDATA[The Brew House Coffee]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_company</wp:meta_key><wp:meta_value><![CDATA[field_review_company]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_quote</wp:meta_key><wp:meta_value><![CDATA[Từ khi có website tích hợp Zalo và SEO local, khách tìm đến quán tăng hẳn.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_quote</wp:meta_key><wp:meta_value><![CDATA[field_review_quote]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_stars</wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_stars</wp:meta_key><wp:meta_value><![CDATA[field_review_stars]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_result</wp:meta_key><wp:meta_value><![CDATA[Top 3 Google "cà phê Hoàn Kiếm"]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_result</wp:meta_key><wp:meta_value><![CDATA[field_review_result]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_tag</wp:meta_key><wp:meta_value><![CDATA[F&B]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_tag</wp:meta_key><wp:meta_value><![CDATA[field_review_tag]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-amber-100 text-amber-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_review_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_num</wp:meta_key><wp:meta_value><![CDATA[02]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_num</wp:meta_key><wp:meta_value><![CDATA[field_review_num]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Phạm Thu Hương]]></title>
+      <wp:post_name><![CDATA[pham-thu-huong]]></wp:post_name>
+      <wp:post_id>124</wp:post_id>
+      <wp:post_type><![CDATA[testimonial]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>3</wp:menu_order>
+      <category domain="review-cat" nicename="r-nhi-p-nh"><![CDATA[Nhiếp ảnh]]></category>
+      <wp:postmeta><wp:meta_key>review_role</wp:meta_key><wp:meta_value><![CDATA[Nhiếp ảnh gia]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_role</wp:meta_key><wp:meta_value><![CDATA[field_review_role]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_company</wp:meta_key><wp:meta_value><![CDATA[Hương Photography Studio]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_company</wp:meta_key><wp:meta_value><![CDATA[field_review_company]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_quote</wp:meta_key><wp:meta_value><![CDATA[Portfolio giờ trông rất xịn. Khách hàng doanh nghiệp liên hệ qua website.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_quote</wp:meta_key><wp:meta_value><![CDATA[field_review_quote]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_stars</wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_stars</wp:meta_key><wp:meta_value><![CDATA[field_review_stars]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_result</wp:meta_key><wp:meta_value><![CDATA[+60% khách doanh nghiệp mới]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_result</wp:meta_key><wp:meta_value><![CDATA[field_review_result]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_tag</wp:meta_key><wp:meta_value><![CDATA[Nhiếp ảnh]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_tag</wp:meta_key><wp:meta_value><![CDATA[field_review_tag]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-gray-100 text-gray-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_review_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_num</wp:meta_key><wp:meta_value><![CDATA[03]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_num</wp:meta_key><wp:meta_value><![CDATA[field_review_num]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Lê Văn Đức]]></title>
+      <wp:post_name><![CDATA[le-van-duc]]></wp:post_name>
+      <wp:post_id>125</wp:post_id>
+      <wp:post_type><![CDATA[testimonial]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>4</wp:menu_order>
+      <category domain="review-cat" nicename="r-d-ch-v"><![CDATA[Dịch vụ]]></category>
+      <wp:postmeta><wp:meta_key>review_role</wp:meta_key><wp:meta_value><![CDATA[Chủ cửa hàng điện lạnh]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_role</wp:meta_key><wp:meta_value><![CDATA[field_review_role]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_company</wp:meta_key><wp:meta_value><![CDATA[Điện Lạnh Hoàng Phát]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_company</wp:meta_key><wp:meta_value><![CDATA[field_review_company]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_quote</wp:meta_key><wp:meta_value><![CDATA[Bây giờ 30% đơn đến từ website.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_quote</wp:meta_key><wp:meta_value><![CDATA[field_review_quote]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_stars</wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_stars</wp:meta_key><wp:meta_value><![CDATA[field_review_stars]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_result</wp:meta_key><wp:meta_value><![CDATA[30% đơn hàng từ website]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_result</wp:meta_key><wp:meta_value><![CDATA[field_review_result]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_tag</wp:meta_key><wp:meta_value><![CDATA[Dịch vụ]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_tag</wp:meta_key><wp:meta_value><![CDATA[field_review_tag]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-green-100 text-green-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_review_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_num</wp:meta_key><wp:meta_value><![CDATA[04]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_num</wp:meta_key><wp:meta_value><![CDATA[field_review_num]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Võ Thị Mai Linh]]></title>
+      <wp:post_name><![CDATA[vo-thi-mai-linh]]></wp:post_name>
+      <wp:post_id>126</wp:post_id>
+      <wp:post_type><![CDATA[testimonial]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>5</wp:menu_order>
+      <category domain="review-cat" nicename="r-spa-beauty"><![CDATA[Spa & Beauty]]></category>
+      <wp:postmeta><wp:meta_key>review_role</wp:meta_key><wp:meta_value><![CDATA[Chủ spa & làm đẹp]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_role</wp:meta_key><wp:meta_value><![CDATA[field_review_role]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_company</wp:meta_key><wp:meta_value><![CDATA[Spa Hương Thơm]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_company</wp:meta_key><wp:meta_value><![CDATA[field_review_company]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_quote</wp:meta_key><wp:meta_value><![CDATA[Website booking online giúp mình giảm 80% thời gian nhắn tin xác nhận lịch.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_quote</wp:meta_key><wp:meta_value><![CDATA[field_review_quote]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_stars</wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_stars</wp:meta_key><wp:meta_value><![CDATA[field_review_stars]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_result</wp:meta_key><wp:meta_value><![CDATA[+40% lượt đặt lịch online]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_result</wp:meta_key><wp:meta_value><![CDATA[field_review_result]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_tag</wp:meta_key><wp:meta_value><![CDATA[Spa & Beauty]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_tag</wp:meta_key><wp:meta_value><![CDATA[field_review_tag]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-pink-100 text-pink-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_review_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_num</wp:meta_key><wp:meta_value><![CDATA[05]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_num</wp:meta_key><wp:meta_value><![CDATA[field_review_num]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Nguyễn Hoàng Nam]]></title>
+      <wp:post_name><![CDATA[nguyen-hoang-nam]]></wp:post_name>
+      <wp:post_id>127</wp:post_id>
+      <wp:post_type><![CDATA[testimonial]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>6</wp:menu_order>
+      <category domain="review-cat" nicename="r-content-creator"><![CDATA[Content Creator]]></category>
+      <wp:postmeta><wp:meta_key>review_role</wp:meta_key><wp:meta_value><![CDATA[TikToker & Content Creator]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_role</wp:meta_key><wp:meta_value><![CDATA[field_review_role]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_company</wp:meta_key><wp:meta_value><![CDATA[Nam Hoàng Media]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_company</wp:meta_key><wp:meta_value><![CDATA[field_review_company]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_quote</wp:meta_key><wp:meta_value><![CDATA[Tỷ lệ chuyển đổi từ TikTok sang mua khoá học tăng 3x.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_quote</wp:meta_key><wp:meta_value><![CDATA[field_review_quote]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_stars</wp:meta_key><wp:meta_value><![CDATA[5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_stars</wp:meta_key><wp:meta_value><![CDATA[field_review_stars]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_result</wp:meta_key><wp:meta_value><![CDATA[3x tỷ lệ chuyển đổi khoá học]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_result</wp:meta_key><wp:meta_value><![CDATA[field_review_result]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_tag</wp:meta_key><wp:meta_value><![CDATA[Content Creator]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_tag</wp:meta_key><wp:meta_value><![CDATA[field_review_tag]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_tag_color</wp:meta_key><wp:meta_value><![CDATA[bg-purple-100 text-purple-700]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_tag_color</wp:meta_key><wp:meta_value><![CDATA[field_review_tag_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>review_num</wp:meta_key><wp:meta_value><![CDATA[06]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_review_num</wp:meta_key><wp:meta_value><![CDATA[field_review_num]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Thu thập yêu cầu]]></title>
+      <wp:post_name><![CDATA[thu-thap-yeu-cau]]></wp:post_name>
+      <wp:post_id>128</wp:post_id>
+      <wp:post_type><![CDATA[quy-trinh]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>1</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>step_num</wp:meta_key><wp:meta_value><![CDATA[01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_num</wp:meta_key><wp:meta_value><![CDATA[field_step_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_day</wp:meta_key><wp:meta_value><![CDATA[Ngày 1]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_day</wp:meta_key><wp:meta_value><![CDATA[field_step_day]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_short_desc</wp:meta_key><wp:meta_value><![CDATA[Tư vấn qua Zalo, ghi nhận nội dung, màu sắc, mục tiêu website.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_step_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_color</wp:meta_key><wp:meta_value><![CDATA[text-primary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_color</wp:meta_key><wp:meta_value><![CDATA[field_step_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_bg</wp:meta_key><wp:meta_value><![CDATA[bg-orange-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_bg</wp:meta_key><wp:meta_value><![CDATA[field_step_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_border_color</wp:meta_key><wp:meta_value><![CDATA[border-primary/30]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_border_color</wp:meta_key><wp:meta_value><![CDATA[field_step_border_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details</wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details</wp:meta_key><wp:meta_value><![CDATA[field_step_details]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_0_detail_item</wp:meta_key><wp:meta_value><![CDATA[Tư vấn 1-1 qua Zalo/Điện thoại]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_0_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_1_detail_item</wp:meta_key><wp:meta_value><![CDATA[Điền form yêu cầu chi tiết]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_1_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_2_detail_item</wp:meta_key><wp:meta_value><![CDATA[Xác nhận brief & timeline]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_2_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_3_detail_item</wp:meta_key><wp:meta_value><![CDATA[Ký hợp đồng & thanh toán 50%]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_3_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Thiết kế mockup]]></title>
+      <wp:post_name><![CDATA[thiet-ke-mockup]]></wp:post_name>
+      <wp:post_id>129</wp:post_id>
+      <wp:post_type><![CDATA[quy-trinh]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>2</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>step_num</wp:meta_key><wp:meta_value><![CDATA[02]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_num</wp:meta_key><wp:meta_value><![CDATA[field_step_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_day</wp:meta_key><wp:meta_value><![CDATA[Ngày 2]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_day</wp:meta_key><wp:meta_value><![CDATA[field_step_day]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_short_desc</wp:meta_key><wp:meta_value><![CDATA[Tạo giao diện Figma/Flatsome theo brand.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_step_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_color</wp:meta_key><wp:meta_value><![CDATA[text-blue-brand]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_color</wp:meta_key><wp:meta_value><![CDATA[field_step_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_bg</wp:meta_key><wp:meta_value><![CDATA[bg-blue-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_bg</wp:meta_key><wp:meta_value><![CDATA[field_step_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_border_color</wp:meta_key><wp:meta_value><![CDATA[border-blue-brand/30]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_border_color</wp:meta_key><wp:meta_value><![CDATA[field_step_border_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details</wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details</wp:meta_key><wp:meta_value><![CDATA[field_step_details]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_0_detail_item</wp:meta_key><wp:meta_value><![CDATA[Thiết kế wireframe & layout]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_0_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_1_detail_item</wp:meta_key><wp:meta_value><![CDATA[Chọn màu sắc & typography]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_1_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_2_detail_item</wp:meta_key><wp:meta_value><![CDATA[Mockup desktop + mobile]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_2_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_3_detail_item</wp:meta_key><wp:meta_value><![CDATA[Gửi xem trước qua Zalo]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_3_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Chỉnh sửa & duyệt]]></title>
+      <wp:post_name><![CDATA[chinh-sua-duyet]]></wp:post_name>
+      <wp:post_id>130</wp:post_id>
+      <wp:post_type><![CDATA[quy-trinh]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>3</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>step_num</wp:meta_key><wp:meta_value><![CDATA[03]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_num</wp:meta_key><wp:meta_value><![CDATA[field_step_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_day</wp:meta_key><wp:meta_value><![CDATA[Ngày 3]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_day</wp:meta_key><wp:meta_value><![CDATA[field_step_day]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_short_desc</wp:meta_key><wp:meta_value><![CDATA[Tối đa 3 lần chỉnh sửa mockup theo phản hồi.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_step_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_color</wp:meta_key><wp:meta_value><![CDATA[text-primary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_color</wp:meta_key><wp:meta_value><![CDATA[field_step_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_bg</wp:meta_key><wp:meta_value><![CDATA[bg-orange-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_bg</wp:meta_key><wp:meta_value><![CDATA[field_step_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_border_color</wp:meta_key><wp:meta_value><![CDATA[border-primary/30]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_border_color</wp:meta_key><wp:meta_value><![CDATA[field_step_border_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details</wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details</wp:meta_key><wp:meta_value><![CDATA[field_step_details]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_0_detail_item</wp:meta_key><wp:meta_value><![CDATA[Tối đa 3 lần chỉnh sửa]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_0_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_1_detail_item</wp:meta_key><wp:meta_value><![CDATA[Phản hồi trong 4 giờ làm việc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_1_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_2_detail_item</wp:meta_key><wp:meta_value><![CDATA[Duyệt mockup cuối cùng]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_2_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_3_detail_item</wp:meta_key><wp:meta_value><![CDATA[Xác nhận nội dung & hình ảnh]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_3_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Dev & tích hợp]]></title>
+      <wp:post_name><![CDATA[dev-tich-hop]]></wp:post_name>
+      <wp:post_id>131</wp:post_id>
+      <wp:post_type><![CDATA[quy-trinh]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>4</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>step_num</wp:meta_key><wp:meta_value><![CDATA[04]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_num</wp:meta_key><wp:meta_value><![CDATA[field_step_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_day</wp:meta_key><wp:meta_value><![CDATA[Ngày 4]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_day</wp:meta_key><wp:meta_value><![CDATA[field_step_day]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_short_desc</wp:meta_key><wp:meta_value><![CDATA[Lên WordPress Flatsome, cài plugin SEO, tích hợp Zalo OA.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_step_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_color</wp:meta_key><wp:meta_value><![CDATA[text-blue-brand]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_color</wp:meta_key><wp:meta_value><![CDATA[field_step_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_bg</wp:meta_key><wp:meta_value><![CDATA[bg-blue-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_bg</wp:meta_key><wp:meta_value><![CDATA[field_step_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_border_color</wp:meta_key><wp:meta_value><![CDATA[border-blue-brand/30]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_border_color</wp:meta_key><wp:meta_value><![CDATA[field_step_border_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details</wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details</wp:meta_key><wp:meta_value><![CDATA[field_step_details]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_0_detail_item</wp:meta_key><wp:meta_value><![CDATA[Cài đặt WordPress + Flatsome]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_0_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_1_detail_item</wp:meta_key><wp:meta_value><![CDATA[Tích hợp Zalo OA & form]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_1_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_2_detail_item</wp:meta_key><wp:meta_value><![CDATA[Cài plugin SEO Yoast]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_2_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_3_detail_item</wp:meta_key><wp:meta_value><![CDATA[Tối ưu tốc độ & bảo mật]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_3_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Kiểm thử toàn diện]]></title>
+      <wp:post_name><![CDATA[kiem-thu-toan-dien]]></wp:post_name>
+      <wp:post_id>132</wp:post_id>
+      <wp:post_type><![CDATA[quy-trinh]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>5</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>step_num</wp:meta_key><wp:meta_value><![CDATA[05]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_num</wp:meta_key><wp:meta_value><![CDATA[field_step_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_day</wp:meta_key><wp:meta_value><![CDATA[Ngày 5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_day</wp:meta_key><wp:meta_value><![CDATA[field_step_day]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_short_desc</wp:meta_key><wp:meta_value><![CDATA[Test mobile, tốc độ, form, SEO, cross-browser.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_step_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_color</wp:meta_key><wp:meta_value><![CDATA[text-primary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_color</wp:meta_key><wp:meta_value><![CDATA[field_step_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_bg</wp:meta_key><wp:meta_value><![CDATA[bg-orange-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_bg</wp:meta_key><wp:meta_value><![CDATA[field_step_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_border_color</wp:meta_key><wp:meta_value><![CDATA[border-primary/30]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_border_color</wp:meta_key><wp:meta_value><![CDATA[field_step_border_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details</wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details</wp:meta_key><wp:meta_value><![CDATA[field_step_details]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_0_detail_item</wp:meta_key><wp:meta_value><![CDATA[Test responsive mobile/tablet]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_0_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_1_detail_item</wp:meta_key><wp:meta_value><![CDATA[Kiểm tra tốc độ PageSpeed]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_1_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_2_detail_item</wp:meta_key><wp:meta_value><![CDATA[Test form & Zalo integration]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_2_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_3_detail_item</wp:meta_key><wp:meta_value><![CDATA[Cross-browser Chrome/Safari/Firefox]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_3_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Bàn giao & hỗ trợ]]></title>
+      <wp:post_name><![CDATA[ban-giao-ho-tro]]></wp:post_name>
+      <wp:post_id>133</wp:post_id>
+      <wp:post_type><![CDATA[quy-trinh]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>6</wp:menu_order>
+
+      <wp:postmeta><wp:meta_key>step_num</wp:meta_key><wp:meta_value><![CDATA[06]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_num</wp:meta_key><wp:meta_value><![CDATA[field_step_num]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_day</wp:meta_key><wp:meta_value><![CDATA[Ngày 5]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_day</wp:meta_key><wp:meta_value><![CDATA[field_step_day]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_short_desc</wp:meta_key><wp:meta_value><![CDATA[Bàn giao toàn bộ tài khoản, hướng dẫn quản trị qua video.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_short_desc</wp:meta_key><wp:meta_value><![CDATA[field_step_short_desc]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_color</wp:meta_key><wp:meta_value><![CDATA[text-blue-brand]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_color</wp:meta_key><wp:meta_value><![CDATA[field_step_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_bg</wp:meta_key><wp:meta_value><![CDATA[bg-blue-50]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_bg</wp:meta_key><wp:meta_value><![CDATA[field_step_bg]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_border_color</wp:meta_key><wp:meta_value><![CDATA[border-blue-brand/30]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_border_color</wp:meta_key><wp:meta_value><![CDATA[field_step_border_color]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details</wp:meta_key><wp:meta_value><![CDATA[4]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details</wp:meta_key><wp:meta_value><![CDATA[field_step_details]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_0_detail_item</wp:meta_key><wp:meta_value><![CDATA[Bàn giao domain + hosting]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_0_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_1_detail_item</wp:meta_key><wp:meta_value><![CDATA[Video hướng dẫn quản trị]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_1_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_2_detail_item</wp:meta_key><wp:meta_value><![CDATA[Thanh toán 50% còn lại]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_2_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>step_details_3_detail_item</wp:meta_key><wp:meta_value><![CDATA[Bắt đầu bảo hành chính thức]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_step_details_3_detail_item</wp:meta_key><wp:meta_value><![CDATA[field_step_detail_item]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Giá đã bao gồm domain và hosting chưa?]]></title>
+      <wp:post_name><![CDATA[gia-da-bao-gom-domain]]></wp:post_name>
+      <wp:post_id>134</wp:post_id>
+      <wp:post_type><![CDATA[faq]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>0</wp:menu_order>
+      <category domain="faq-cat" nicename="gia"><![CDATA[Giá]]></category>
+      <wp:postmeta><wp:meta_key>faq_answer</wp:meta_key><wp:meta_value><![CDATA[Có! Tất cả gói đều bao gồm domain .com/.vn và hosting tốc độ cao cho năm đầu tiên.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_faq_answer</wp:meta_key><wp:meta_value><![CDATA[field_faq_answer]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Thanh toán như thế nào?]]></title>
+      <wp:post_name><![CDATA[thanh-toan-nhu-the-nao]]></wp:post_name>
+      <wp:post_id>135</wp:post_id>
+      <wp:post_type><![CDATA[faq]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>0</wp:menu_order>
+      <category domain="faq-cat" nicename="gia"><![CDATA[Giá]]></category>
+      <wp:postmeta><wp:meta_key>faq_answer</wp:meta_key><wp:meta_value><![CDATA[50% khi ký hợp đồng, 50% còn lại khi bàn giao website hoàn chỉnh.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_faq_answer</wp:meta_key><wp:meta_value><![CDATA[field_faq_answer]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Có thể nâng cấp gói sau khi đã mua không?]]></title>
+      <wp:post_name><![CDATA[co-the-nang-cap-goi]]></wp:post_name>
+      <wp:post_id>136</wp:post_id>
+      <wp:post_type><![CDATA[faq]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>0</wp:menu_order>
+      <category domain="faq-cat" nicename="gia"><![CDATA[Giá]]></category>
+      <wp:postmeta><wp:meta_key>faq_answer</wp:meta_key><wp:meta_value><![CDATA[Có! Bạn có thể nâng cấp bất cứ lúc nào. Chỉ cần thanh toán phần chênh lệch.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_faq_answer</wp:meta_key><wp:meta_value><![CDATA[field_faq_answer]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Nếu không hài lòng có được hoàn tiền không?]]></title>
+      <wp:post_name><![CDATA[hoan-tien]]></wp:post_name>
+      <wp:post_id>137</wp:post_id>
+      <wp:post_type><![CDATA[faq]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>0</wp:menu_order>
+      <category domain="faq-cat" nicename="gia"><![CDATA[Giá]]></category>
+      <wp:postmeta><wp:meta_key>faq_answer</wp:meta_key><wp:meta_value><![CDATA[Nếu chúng tôi không bàn giao đúng 5 ngày, bạn được hoàn 100% tiền đã thanh toán.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_faq_answer</wp:meta_key><wp:meta_value><![CDATA[field_faq_answer]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Tôi cần chuẩn bị gì trước khi bắt đầu?]]></title>
+      <wp:post_name><![CDATA[can-chuan-bi-gi]]></wp:post_name>
+      <wp:post_id>138</wp:post_id>
+      <wp:post_type><![CDATA[faq]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>0</wp:menu_order>
+      <category domain="faq-cat" nicename="quy-trinh"><![CDATA[Quy trình]]></category>
+      <wp:postmeta><wp:meta_key>faq_answer</wp:meta_key><wp:meta_value><![CDATA[Bạn chỉ cần cung cấp: logo (nếu có), nội dung text, hình ảnh sản phẩm/dịch vụ.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_faq_answer</wp:meta_key><wp:meta_value><![CDATA[field_faq_answer]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Nếu tôi không hài lòng với thiết kế thì sao?]]></title>
+      <wp:post_name><![CDATA[khong-hai-long-thiet-ke]]></wp:post_name>
+      <wp:post_id>139</wp:post_id>
+      <wp:post_type><![CDATA[faq]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>0</wp:menu_order>
+      <category domain="faq-cat" nicename="quy-trinh"><![CDATA[Quy trình]]></category>
+      <wp:postmeta><wp:meta_key>faq_answer</wp:meta_key><wp:meta_value><![CDATA[Bạn được chỉnh sửa tối đa 3 lần miễn phí ở bước mockup.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_faq_answer</wp:meta_key><wp:meta_value><![CDATA[field_faq_answer]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[Sau khi bàn giao tôi có thể tự cập nhật nội dung không?]]></title>
+      <wp:post_name><![CDATA[tu-cap-nhat-noi-dung]]></wp:post_name>
+      <wp:post_id>140</wp:post_id>
+      <wp:post_type><![CDATA[faq]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>0</wp:menu_order>
+      <category domain="faq-cat" nicename="quy-trinh"><![CDATA[Quy trình]]></category>
+      <wp:postmeta><wp:meta_key>faq_answer</wp:meta_key><wp:meta_value><![CDATA[Có! WordPress rất dễ dùng. Chúng tôi sẽ cung cấp video hướng dẫn chi tiết.]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_faq_answer</wp:meta_key><wp:meta_value><![CDATA[field_faq_answer]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title><![CDATA[5 ngày có tính cả cuối tuần không?]]></title>
+      <wp:post_name><![CDATA[5-ngay-tinh-cuoi-tuan]]></wp:post_name>
+      <wp:post_id>141</wp:post_id>
+      <wp:post_type><![CDATA[faq]]></wp:post_type>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:menu_order>0</wp:menu_order>
+      <category domain="faq-cat" nicename="quy-trinh"><![CDATA[Quy trình]]></category>
+      <wp:postmeta><wp:meta_key>faq_answer</wp:meta_key><wp:meta_value><![CDATA[5 ngày là ngày làm việc (thứ 2 - thứ 6).]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key>_faq_answer</wp:meta_key><wp:meta_value><![CDATA[field_faq_answer]]></wp:meta_value></wp:postmeta>
+    </item>
+
+</channel>
+</rss>

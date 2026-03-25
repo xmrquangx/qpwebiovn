@@ -15,6 +15,7 @@ export interface WPPost {
   excerpt: WPRendered;
   featured_media: number;
   menu_order: number;
+  meta: Record<string, unknown>;
   acf: Record<string, unknown>;
   _embedded?: Record<string, unknown>;
 }

@@ -23,8 +23,9 @@ export async function wpFetch<T>(
   opts: FetchOptions = {},
 ): Promise<T | null> {
   const url = new URL(`${API_BASE}/${endpoint}`);
-  // Always request acf fields & 100 items max
+  // Always request embedded data (featured media, terms) & 100 items max
   url.searchParams.set('per_page', '100');
+  url.searchParams.set('_embed', '1');
   Object.entries(params).forEach(([k, v]) =>
     url.searchParams.set(k, String(v)),
   );
