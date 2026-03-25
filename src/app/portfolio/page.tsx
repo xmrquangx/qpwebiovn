@@ -2,6 +2,7 @@ import React from 'react';
 import { getPortfolioItems, getPortfolioCategories } from '@/lib/wordpress/services';
 import PortfolioClient from './PortfolioClient';
 
+export const dynamic = 'force-dynamic';
 export default async function PortfolioPage() {
   const [items, categories] = await Promise.all([
     getPortfolioItems(),
