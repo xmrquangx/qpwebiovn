@@ -81,7 +81,8 @@ const plans: PricingPlan[] = [
   },
 ];
 
-export default function PricingSection() {
+export default function PricingSection({ wpPlans = [] }: { wpPlans?: { name: string; price: string; desc: string; pages: string; design: string; seo: string; warranty: string; features: string[]; popular: boolean; cta: string; num: string }[] }) {
+  const activePlans = wpPlans.length > 0 ? wpPlans : plans;
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -163,7 +164,7 @@ export default function PricingSection() {
 
         {/* Pricing Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-          {plans.map((plan) => (
+          {activePlans.map((plan) => (
             <div
               key={plan.name}
               className={`pricing-card spotlight-card flex flex-col ${

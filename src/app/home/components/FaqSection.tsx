@@ -36,7 +36,8 @@ const trustItems = [
   { icon: '🛡️', label: 'Bảo hành', sub: '6-12 tháng' },
 ];
 
-export default function FaqSection() {
+export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: string; answer: string }[] }) {
+  const activeFaqs = wpFaqs.length > 0 ? wpFaqs.map(f => ({ q: f.question, a: f.answer })) : faqs;
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -112,7 +113,7 @@ export default function FaqSection() {
             </div>
 
             <div className="space-y-0 card-base overflow-hidden">
-              {faqs.map((faq, i) => (
+              {activeFaqs.map((faq, i) => (
                 <div key={i} className="faq-item faq-animate" data-delay={String(i * 60)}>
                   <button
                     className="w-full flex items-start justify-between gap-4 p-5 text-left hover:bg-bg-alt transition-colors"

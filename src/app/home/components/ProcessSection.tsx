@@ -83,7 +83,8 @@ const steps = [
   },
 ];
 
-export default function ProcessSection() {
+export default function ProcessSection({ wpSteps = [] }: { wpSteps?: { num: string; title: string; desc: string; day: string; color: string; bg: string }[] }) {
+  const activeSteps = wpSteps.length > 0 ? wpSteps.map((s, i) => ({ ...s, icon: steps[i]?.icon || steps[0].icon })) : steps;
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -156,7 +157,7 @@ export default function ProcessSection() {
 
         {/* Steps Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {steps.map((step, i) => (
+          {activeSteps.map((step, i) => (
             <div key={step.num} className="process-item">
               <div className="card-base bg-white/5 border border-white/10 p-7 h-full hover:bg-white/8 transition-all group">
                 <div className="flex items-start justify-between mb-5">

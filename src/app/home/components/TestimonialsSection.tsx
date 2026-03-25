@@ -54,7 +54,8 @@ const testimonials = [
 }];
 
 
-export default function TestimonialsSection() {
+export default function TestimonialsSection({ wpTestimonials = [] }: { wpTestimonials?: { name: string; role: string; company: string; avatar: string; alt: string; quote: string; stars: number; tag: string; tagColor: string; num: string }[] }) {
+  const items = wpTestimonials.length > 0 ? wpTestimonials : testimonials;
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -132,7 +133,7 @@ export default function TestimonialsSection() {
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {testimonials.map((t) =>
+          {items.map((t) =>
           <div key={t.name} className="testi-card spotlight-card p-8 flex flex-col h-full">
               {/* Header */}
               <div className="flex items-start justify-between border-b border-border pb-5 mb-6">

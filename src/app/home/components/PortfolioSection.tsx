@@ -48,7 +48,8 @@ const portfolioItems = [
 }];
 
 
-export default function PortfolioSection() {
+export default function PortfolioSection({ wpItems = [] }: { wpItems?: { src: string; alt: string; title: string; tag: string; tagColor: string }[] }) {
+  const items = wpItems.length > 0 ? wpItems : portfolioItems;
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -110,7 +111,7 @@ export default function PortfolioSection() {
 
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {portfolioItems.map((item, i) =>
+          {items.map((item, i) =>
           <div key={item.title} className="portfolio-item group cursor-pointer">
               <div className="portfolio-card shadow-card hover:shadow-card-hover transition-shadow duration-300">
                 <AppImage
