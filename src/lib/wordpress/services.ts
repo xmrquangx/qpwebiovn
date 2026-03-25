@@ -64,7 +64,7 @@ function getEmbeddedTerms(post: WPPost, taxonomyIndex = 0): string[] {
 
 export async function getServices(): Promise<Service[]> {
   const posts = await wpFetch<WPPost[]>('service', {
-    orderby: 'menu_order',
+    orderby: 'date',
     order: 'asc',
     per_page: '20',
   }, { tags: ['services'] });
@@ -94,7 +94,7 @@ export async function getServices(): Promise<Service[]> {
 
 export async function getPortfolioItems(): Promise<PortfolioItem[]> {
   const posts = await wpFetch<WPPost[]>('portfolio', {
-    orderby: 'menu_order',
+    orderby: 'date',
     order: 'asc',
     per_page: '50',
   }, { tags: ['portfolio'] });
@@ -144,7 +144,7 @@ export async function getPortfolioCategories(): Promise<string[]> {
 
 export async function getPricingPlans(): Promise<PricingPlan[]> {
   const posts = await wpFetch<WPPost[]>('goi-gia', {
-    orderby: 'menu_order',
+    orderby: 'date',
     order: 'asc',
   }, { tags: ['pricing'] });
 
@@ -175,7 +175,7 @@ export async function getPricingPlans(): Promise<PricingPlan[]> {
 
 export async function getAddons(): Promise<Addon[]> {
   const posts = await wpFetch<WPPost[]>('addon', {
-    orderby: 'menu_order',
+    orderby: 'date',
     order: 'asc',
   }, { tags: ['addons'] });
 
@@ -198,7 +198,7 @@ export async function getAddons(): Promise<Addon[]> {
 
 export async function getTestimonials(): Promise<Testimonial[]> {
   const posts = await wpFetch<WPPost[]>('testimonial', {
-    orderby: 'menu_order',
+    orderby: 'date',
     order: 'asc',
   }, { tags: ['testimonials'] });
 
@@ -239,7 +239,7 @@ export async function getTestimonials(): Promise<Testimonial[]> {
 
 export async function getProcessSteps(): Promise<ProcessStep[]> {
   const posts = await wpFetch<WPPost[]>('quy-trinh', {
-    orderby: 'menu_order',
+    orderby: 'date',
     order: 'asc',
   }, { tags: ['process'] });
 
@@ -270,7 +270,7 @@ export async function getFAQs(
   category?: string,
 ): Promise<FAQ[]> {
   const params: Record<string, string | number> = {
-    orderby: 'menu_order',
+    orderby: 'date',
     order: 'asc',
   };
   // If category slug provided, fetch the term first then filter
