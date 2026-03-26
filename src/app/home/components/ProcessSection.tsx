@@ -165,12 +165,12 @@ export default function ProcessSection({ wpSteps = [] }: { wpSteps?: { num: stri
                     {step.icon}
                   </div>
                   <div className="text-right">
-                    <span className="text-xs font-mono text-white/40 block font-display">{step.num}</span>
+                    <span className="text-xs font-mono text-slate-400 block font-display">{step.num}</span>
                     <span className="text-xs font-bold text-primary">{step.day}</span>
                   </div>
                 </div>
-                <h3 className="font-display font-bold text-white text-lg mb-2">{step.title}</h3>
-                <p className="text-white/80 text-sm leading-relaxed">{step.desc}</p>
+                <h3 className="font-display font-bold text-foreground text-lg mb-2">{step.title}</h3>
+                <p className="text-muted text-sm leading-relaxed">{step.desc}</p>
               </div>
             </div>
           ))}
