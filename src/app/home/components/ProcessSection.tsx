@@ -12,7 +12,7 @@ const steps = [
     ),
     title: 'Thu thập yêu cầu',
     desc: 'Tư vấn qua Zalo, ghi nhận nội dung, màu sắc, mục tiêu website.',
-    color: 'text-primary',
+    color: 'text-black',
     bg: 'bg-orange-50',
     day: 'Ngày 1',
   },
@@ -38,7 +38,7 @@ const steps = [
     ),
     title: 'Chỉnh sửa & duyệt',
     desc: 'Tối đa 3 lần chỉnh sửa mockup theo phản hồi của bạn.',
-    color: 'text-primary',
+    color: 'text-black',
     bg: 'bg-orange-50',
     day: 'Ngày 3',
   },
@@ -64,7 +64,7 @@ const steps = [
     ),
     title: 'Kiểm thử',
     desc: 'Test mobile, tốc độ, form, SEO, cross-browser trước khi go-live.',
-    color: 'text-primary',
+    color: 'text-black',
     bg: 'bg-orange-50',
     day: 'Ngày 5',
   },
@@ -143,7 +143,7 @@ export default function ProcessSection({ wpSteps = [] }: { wpSteps?: { num: stri
           </div>
           <h2
             id="process-heading"
-            className="font-display font-bold text-black mb-4"
+            className="font-display font-bold text-white mb-4"
             style={{ fontSize: 'clamp(24px, 3.5vw, 40px)' }}
           >
             Từ ý tưởng đến{' '}
