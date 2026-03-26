@@ -137,7 +137,7 @@ export default function ProcessSection({ wpSteps = [] }: { wpSteps?: { num: stri
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-xs font-bold uppercase tracking-widest text-white/60 mb-4 font-display">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 text-xs font-bold uppercase tracking-widest text-white/80 mb-4 font-display">
             <span className="w-2 h-2 rounded-full bg-primary" />
             Quy trình làm việc
           </div>
@@ -150,7 +150,7 @@ export default function ProcessSection({ wpSteps = [] }: { wpSteps?: { num: stri
             <span className="highlight-orange">website live</span>{' '}
             chỉ 5 ngày
           </h2>
-          <p className="text-white/50 text-lg max-w-xl mx-auto">
+          <p className="text-white/70 text-lg max-w-xl mx-auto">
             Quy trình rõ ràng, cập nhật tiến độ hàng ngày qua Zalo — không bao giờ trễ hẹn.
           </p>
         </div>
@@ -165,12 +165,12 @@ export default function ProcessSection({ wpSteps = [] }: { wpSteps?: { num: stri
                     {step.icon}
                   </div>
                   <div className="text-right">
-                    <span className="text-xs font-mono text-white/20 block font-display">{step.num}</span>
-                    <span className="text-xs font-bold text-primary/70">{step.day}</span>
+                    <span className="text-xs font-mono text-white/40 block font-display">{step.num}</span>
+                    <span className="text-xs font-bold text-primary">{step.day}</span>
                   </div>
                 </div>
                 <h3 className="font-display font-bold text-white text-lg mb-2">{step.title}</h3>
-                <p className="text-white/50 text-sm leading-relaxed">{step.desc}</p>
+                <p className="text-white/80 text-sm leading-relaxed">{step.desc}</p>
               </div>
             </div>
           ))}
