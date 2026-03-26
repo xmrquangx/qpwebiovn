@@ -143,7 +143,7 @@ export default function ProcessSection({ wpSteps = [] }: { wpSteps?: { num: stri
           </div>
           <h2
             id="process-heading"
-            className="font-display font-bold text-white mb-4"
+            className="font-display font-bold text-black mb-4"
             style={{ fontSize: 'clamp(24px, 3.5vw, 40px)' }}
           >
             Từ ý tưởng đến{' '}
