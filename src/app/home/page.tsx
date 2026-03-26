@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroSection from './components/HeroSection';
@@ -9,7 +10,7 @@ import ProcessSection from './components/ProcessSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import FaqSection from './components/FaqSection';
 import ZaloFloat from './components/ZaloFloat';
-import { Organization, WebPage, SoftwareApplication } from './components/StructuredData';
+import RankMathSchema from '@/components/RankMathSchema';
 import {
   getPortfolioItems,
   getPricingPlans,
@@ -17,8 +18,13 @@ import {
   getProcessSteps,
   getFAQs,
 } from '@/lib/wordpress/services';
+import { getPageSEO } from '@/lib/wordpress/seo';
 
 export const dynamic = 'force-dynamic';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return getPageSEO('home', '/');
+}
 
 export default async function HomePage() {
   const [portfolioItems, plans, testimonials, steps, faqs] = await Promise.all([
@@ -31,9 +37,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <Organization />
-      <WebPage />
-      <SoftwareApplication />
+      <RankMathSchema wpPath="/" />
       <div className="grain" aria-hidden="true" />
       <Header />
       <main>

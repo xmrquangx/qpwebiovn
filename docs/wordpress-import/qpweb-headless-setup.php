@@ -922,23 +922,34 @@ function qpweb_get_options( $request ) {
     $hotline = '';
     $zalo    = '';
     $email   = '';
+    $logo    = '';
 
     // Thử lấy từ ACF/SCF options page
     if ( function_exists( 'get_field' ) ) {
         $hotline = get_field( 'hotline', 'option' ) ?: '';
         $zalo    = get_field( 'zalo',    'option' ) ?: '';
         $email   = get_field( 'email',   'option' ) ?: '';
+
+        // Logo field — ACF Image field trả về URL hoặc array
+        $logo_raw = get_field( 'logo', 'option' );
+        if ( is_array( $logo_raw ) && ! empty( $logo_raw['url'] ) ) {
+            $logo = $logo_raw['url'];
+        } elseif ( is_string( $logo_raw ) && ! empty( $logo_raw ) ) {
+            $logo = $logo_raw;
+        }
     }
 
     // Fallback sang get_option nếu ACF không có
     if ( empty( $hotline ) ) $hotline = get_option( 'qpweb_hotline', '' );
     if ( empty( $zalo ) )    $zalo    = get_option( 'qpweb_zalo', '' );
     if ( empty( $email ) )   $email   = get_option( 'qpweb_email', '' );
+    if ( empty( $logo ) )    $logo    = get_option( 'qpweb_logo', '' );
 
     return rest_ensure_response([
         'hotline' => $hotline,
         'zalo'    => $zalo,
         'email'   => $email,
+        'logo'    => $logo,
     ]);
 }
 
@@ -1019,3 +1030,117 @@ add_action( 'init', function () {
         'show_in_rest' => false, // Không cần REST cho CPT này
     ]);
 });
+
+
+/* ──────────────────────────────────────────────
+ *  9. RANK MATH SEO — HEADLESS INTEGRATION
+ *     Auto-create pages for frontend routes & configure Rank Math
+ * ────────────────────────────────────────────── */
+
+/**
+ * 9.1 Auto-create WordPress pages that match frontend routes.
+ * Rank Math needs these pages to exist so SEO can be configured per-page.
+ * Run on plugin activation or admin_init (safe — checks before creating).
+ */
+add_action( 'admin_init', 'qpweb_ensure_seo_pages' );
+
+function qpweb_ensure_seo_pages() {
+    // Only run once per day (transient-based throttle)
+    if ( get_transient( 'qpweb_seo_pages_checked' ) ) {
+        return;
+    }
+    set_transient( 'qpweb_seo_pages_checked', 1, DAY_IN_SECONDS );
+
+    $pages = [
+        'dich-vu'   => 'Dịch Vụ Thiết Kế Website',
+        'gia'       => 'Bảng Giá Thiết Kế Website',
+        'lien-he'   => 'Liên Hệ',
+        'khach-hang'=> 'Khách Hàng Nói Gì',
+        'quy-trinh' => 'Quy Trình Thiết Kế Website',
+        'portfolio' => 'Dự Án Đã Thực Hiện',
+    ];
+
+    foreach ( $pages as $slug => $title ) {
+        $existing = get_page_by_path( $slug );
+        if ( ! $existing ) {
+            wp_insert_post([
+                'post_title'  => $title,
+                'post_name'   => $slug,
+                'post_type'   => 'page',
+                'post_status' => 'publish',
+                'post_content'=> '',
+            ]);
+        }
+    }
+}
+
+/**
+ * 9.2 Allow Rank Math REST API endpoint through CORS.
+ * By default Rank Math's /rankmath/v1/getHead may be blocked by CORS.
+ */
+add_filter( 'rest_pre_serve_request', function ( $value ) {
+    // Ensure Rank Math endpoints also get CORS headers
+    $origin  = get_http_origin();
+    $allowed = [
+        'https://qpweb.io.vn',
+        'https://www.qpweb.io.vn',
+        'http://localhost:4028',
+        'http://localhost:3000',
+    ];
+    if ( in_array( $origin, $allowed, true ) ) {
+        // Headers already set by section 6, but ensure they persist
+        // for Rank Math's namespace too
+        if ( ! headers_sent() ) {
+            header( 'Access-Control-Allow-Origin: ' . $origin );
+            header( 'Access-Control-Allow-Methods: GET, POST, OPTIONS' );
+            header( 'Access-Control-Allow-Headers: Authorization, Content-Type' );
+        }
+    }
+    return $value;
+}, 20 ); // priority 20 = after section 6's filter
+
+/**
+ * 9.3 Ensure Rank Math SEO is enabled for all our custom post types.
+ * This adds the Rank Math meta box in WP Admin for each CPT.
+ */
+add_filter( 'rank_math/excluded_post_types', function ( $excluded ) {
+    // Remove our CPTs from the excluded list (if any)
+    $our_cpts = [ 'service', 'portfolio', 'goi-gia', 'addon', 'testimonial', 'quy-trinh', 'faq' ];
+    foreach ( $our_cpts as $cpt ) {
+        unset( $excluded[ $cpt ] );
+    }
+    return $excluded;
+});
+
+/**
+ * 9.4 Add Rank Math SEO fields to REST response for CPTs.
+ * Exposes rank_math_title, rank_math_description, rank_math_focus_keyword
+ * in the REST API response for each post.
+ */
+add_action( 'rest_api_init', 'qpweb_add_rankmath_to_rest' );
+
+function qpweb_add_rankmath_to_rest() {
+    $post_types = [ 'service', 'portfolio', 'goi-gia', 'addon', 'testimonial', 'quy-trinh', 'faq', 'page' ];
+
+    foreach ( $post_types as $pt ) {
+        register_rest_field( $pt, 'rank_math', [
+            'get_callback' => function ( $object ) {
+                $post_id = $object['id'];
+                return [
+                    'title'         => get_post_meta( $post_id, 'rank_math_title', true ) ?: '',
+                    'description'   => get_post_meta( $post_id, 'rank_math_description', true ) ?: '',
+                    'focus_keyword' => get_post_meta( $post_id, 'rank_math_focus_keyword', true ) ?: '',
+                    'robots'        => get_post_meta( $post_id, 'rank_math_robots', true ) ?: [],
+                    'canonical_url' => get_post_meta( $post_id, 'rank_math_canonical_url', true ) ?: '',
+                    'og_title'      => get_post_meta( $post_id, 'rank_math_facebook_title', true ) ?: '',
+                    'og_description'=> get_post_meta( $post_id, 'rank_math_facebook_description', true ) ?: '',
+                    'og_image'      => get_post_meta( $post_id, 'rank_math_facebook_image', true ) ?: '',
+                ];
+            },
+            'schema' => [
+                'type'        => 'object',
+                'description' => 'Rank Math SEO fields',
+            ],
+        ]);
+    }
+}

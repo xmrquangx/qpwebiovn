@@ -45,9 +45,6 @@ export default function Header() {
               aria-label="WebAgencyVN - về trang chủ"
             >
               <AppLogo size={36} />
-              <span className="font-display font-800 text-lg text-foreground tracking-tight hidden sm:block">
-                Web<span className="highlight-orange">Agency</span>VN
-              </span>
             </Link>
 
             {/* Desktop Nav */}

@@ -368,6 +368,7 @@ export interface ContactOptions {
   hotline: string;
   zalo: string;
   email: string;
+  logo: string;
 }
 
 export async function getContactOptions(): Promise<ContactOptions> {
@@ -379,10 +380,10 @@ export async function getContactOptions(): Promise<ContactOptions> {
       signal: controller.signal,
     });
     clearTimeout(timeout);
-    if (!res.ok) return { hotline: '', zalo: '', email: '' };
+    if (!res.ok) return { hotline: '', zalo: '', email: '', logo: '' };
     return (await res.json()) as ContactOptions;
   } catch {
-    return { hotline: '', zalo: '', email: '' };
+    return { hotline: '', zalo: '', email: '', logo: '' };
   }
 }
 

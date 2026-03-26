@@ -17,9 +17,6 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <AppLogo size={40} />
-              <span className="font-display font-bold text-xl text-white tracking-tight">
-                WebAgencyVN
-              </span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">
               Freelancer thiết kế website WordPress Flatsome chuyên nghiệp. Bàn giao trong 5 ngày, SEO local, tích hợp Zalo.

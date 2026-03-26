@@ -6,12 +6,14 @@ export interface SiteOptions {
   hotline: string;
   zalo: string;
   email: string;
+  logo: string;
 }
 
 const defaultOptions: SiteOptions = {
   hotline: '0901 234 567',
   zalo: 'https://zalo.me/0901234567',
   email: 'hello@webagencyvn.com',
+  logo: '/assets/images/app_logo.png',
 };
 
 const SiteOptionsContext = createContext<SiteOptions>(defaultOptions);
@@ -27,6 +29,7 @@ export function SiteOptionsProvider({
     hotline: options.hotline || defaultOptions.hotline,
     zalo: options.zalo || defaultOptions.zalo,
     email: options.email || defaultOptions.email,
+    logo: options.logo || defaultOptions.logo,
   };
   return (
     <SiteOptionsContext.Provider value={merged}>
