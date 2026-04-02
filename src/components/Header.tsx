@@ -14,6 +14,7 @@ const navLinks = [
   { label: 'Quy trình', href: '/quy-trinh' },
   { label: 'Khách hàng', href: '/khach-hang' },
   { label: 'Giá', href: '/gia' },
+  { label: 'Tin tức', href: '/tin-tuc' },
   { label: 'Liên hệ', href: '/lien-he' },
 ];
 

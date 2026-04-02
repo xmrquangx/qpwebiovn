@@ -122,3 +122,23 @@ export interface FAQ {
   question: string;
   answer: string;
 }
+
+export interface BlogPost {
+  title: string;
+  slug: string;
+  excerpt: string;
+  content: string;
+  date: string;
+  modified: string;
+  featuredImage: {
+    src: string;
+    alt: string;
+  } | null;
+  categories: { id: number; name: string; slug: string }[];
+  tags: { id: number; name: string; slug: string }[];
+  author: {
+    name: string;
+    avatar: string;
+  };
+}
+
