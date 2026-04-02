@@ -303,6 +303,10 @@ const PAGE_DEFAULTS: Record<string, { title: string; description: string }> = {
     description:
       'Xem các dự án website WordPress đã hoàn thành cho khách hàng: Spa, Coaching, F&B, và nhiều ngành khác.',
   },
+  'tin-tuc': {
+    title: 'Tin tức & Kiến thức | WebAgency VN',
+    description: 'Cập nhật tin tức mới nhất về thiết kế web, marketing online, SEO và công nghệ từ WebAgency VN.',
+  },
 };
 
 /**

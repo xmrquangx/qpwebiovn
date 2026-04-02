@@ -1,34 +1,18 @@
 import React from 'react';
 import Link from 'next/link';
 import { getPosts } from '@/lib/wordpress/posts';
-import { getSEOMeta } from '@/lib/wordpress/seo';
+import { getPageSEO } from '@/lib/wordpress/seo';
 import BlogCard from '@/components/ui/BlogCard';
 
 export const revalidate = 3600; // Revalidate every hour
 
-export async function generateMetadata({ searchParams }: { searchParams: { page?: string } }) {
-  // Let's assume there's a generalized SEO getting for the blog page, but we will construct a basic one if not found.
-  const seo = await getSEOMeta('/tin-tuc');
-  if (seo) {
-    return {
-      title: seo.title,
-      description: seo.description,
-      openGraph: {
-         title: seo.ogTitle || seo.title,
-         description: seo.ogDescription || seo.description,
-         images: seo.ogImage ? [{ url: seo.ogImage }] : [],
-      }
-    };
-  }
-
-  return {
-    title: 'Tin tức & Kiến thức | WebAgency VN',
-    description: 'Cập nhật tin tức mới nhất về thiết kế web, marketing online, SEO và công nghệ từ WebAgency VN.',
-  };
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ page?: string }> }) {
+  return await getPageSEO('tin-tuc', '/tin-tuc/');
 }
 
-export default async function BlogPage({ searchParams }: { searchParams: { page?: string } }) {
-  const currentPage = Number(searchParams.page) || 1;
+export default async function BlogPage({ searchParams }: { searchParams: Promise<{ page?: string }> }) {
+  const resolvedSearchParams = await searchParams;
+  const currentPage = Number(resolvedSearchParams.page) || 1;
   const { posts, totalPages } = await getPosts({ page: currentPage, per_page: 9 });
 
   return (

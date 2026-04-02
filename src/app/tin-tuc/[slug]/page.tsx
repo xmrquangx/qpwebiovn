@@ -3,56 +3,33 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getPostBySlug, getRelatedPosts } from '@/lib/wordpress/posts';
-import { getSEOMeta } from '@/lib/wordpress/seo';
+import { getPostSEO } from '@/lib/wordpress/seo';
 import BlogCard from '@/components/ui/BlogCard';
 import { CalendarIcon, UserIcon, TagIcon } from '@heroicons/react/24/outline';
 
 export const revalidate = 3600;
 
 interface Params {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({ params }: Params) {
-  const { slug } = params;
+  const { slug } = await params;
   
-  // Try SEO plugin data first
-  const seoPath = `/tin-tuc/${slug}`;
-  const seo = await getSEOMeta(seoPath);
-  
-  if (seo) {
-    return {
-      title: seo.title,
-      description: seo.description,
-      openGraph: {
-        title: seo.ogTitle || seo.title,
-        description: seo.ogDescription || seo.description,
-        images: seo.ogImage ? [{ url: seo.ogImage }] : [],
-      }
-    };
-  }
-
-  // Fallback to fetch post data
   const post = await getPostBySlug(slug);
   if (!post) {
     return { title: 'Bài viết không tồn tại | WebAgency VN' };
   }
 
-  return {
-    title: `${post.title} | WebAgency VN`,
-    description: post.excerpt.replace(/(<([^>]+)>)/gi, "").substring(0, 160) + '...',
-    openGraph: {
-      title: post.title,
-      description: post.excerpt.replace(/(<([^>]+)>)/gi, "").substring(0, 160) + '...',
-      images: post.featuredImage ? [{ url: post.featuredImage.src }] : [],
-    }
-  };
+  const cleanDescription = post.excerpt.replace(/(<([^>]+)>)/gi, "").substring(0, 160) + '...';
+  
+  return await getPostSEO('tin-tuc', slug, `${post.title} | WebAgency VN`, cleanDescription);
 }
 
 export default async function BlogPostPage({ params }: Params) {
-  const { slug } = params;
+  const { slug } = await params;
   const post = await getPostBySlug(slug);
 
   if (!post) {
