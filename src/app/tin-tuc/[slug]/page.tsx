@@ -7,6 +7,8 @@ import { getPostSEO } from '@/lib/wordpress/seo';
 import BlogCard from '@/components/ui/BlogCard';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ZaloFloat from '@/app/home/components/ZaloFloat';
+import RankMathSchema from '@/components/RankMathSchema';
 import { CalendarIcon, UserIcon, TagIcon } from '@heroicons/react/24/outline';
 
 export const revalidate = 3600;
@@ -51,6 +53,8 @@ export default async function BlogPostPage({ params }: Params) {
 
   return (
     <>
+      <RankMathSchema wpPath={`/tin-tuc/${post.slug}/`} />
+      <div className="grain" aria-hidden="true" />
       <Header />
       <main className="min-h-screen pt-24 pb-16">
       <article className="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
@@ -153,6 +157,7 @@ export default async function BlogPostPage({ params }: Params) {
       )}
       </main>
       <Footer />
+      <ZaloFloat />
     </>
   );
 }

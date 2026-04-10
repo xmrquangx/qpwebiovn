@@ -5,6 +5,8 @@ import { getPageSEO } from '@/lib/wordpress/seo';
 import BlogCard from '@/components/ui/BlogCard';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ZaloFloat from '@/app/home/components/ZaloFloat';
+import RankMathSchema from '@/components/RankMathSchema';
 
 export const revalidate = 3600; // Revalidate every hour
 
@@ -19,6 +21,8 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
 
   return (
     <>
+      <RankMathSchema wpPath="/tin-tuc/" />
+      <div className="grain" aria-hidden="true" />
       <Header />
       <main className="min-h-screen pt-24 pb-16">
       {/* Header section */}
@@ -103,6 +107,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
       </section>
       </main>
       <Footer />
+      <ZaloFloat />
     </>
   );
 }
