@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { getPostBySlug, getRelatedPosts } from '@/lib/wordpress/posts';
 import { getPostSEO } from '@/lib/wordpress/seo';
 import BlogCard from '@/components/ui/BlogCard';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { CalendarIcon, UserIcon, TagIcon } from '@heroicons/react/24/outline';
 
 export const revalidate = 3600;
@@ -48,7 +50,9 @@ export default async function BlogPostPage({ params }: Params) {
   });
 
   return (
-    <main className="min-h-screen pt-24 pb-16">
+    <>
+      <Header />
+      <main className="min-h-screen pt-24 pb-16">
       <article className="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
         {/* Breadcrumb */}
         <nav className="flex items-center text-sm text-muted-foreground mb-8">
@@ -147,6 +151,8 @@ export default async function BlogPostPage({ params }: Params) {
           </div>
         </section>
       )}
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }

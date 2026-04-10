@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next';
 import '../styles/tailwind.css';
 import { getContactOptions } from '@/lib/wordpress/services';
 import { SiteOptionsProvider } from '@/lib/SiteOptionsContext';
+import parse from 'html-react-parser';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -47,6 +48,9 @@ export default async function RootLayout({
 
   return (
     <html lang="vi">
+      <head>
+        {options.header_code ? parse(options.header_code) : null}
+      </head>
       <body>
         <SiteOptionsProvider options={options}>
           {children}

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { getPosts } from '@/lib/wordpress/posts';
 import { getPageSEO } from '@/lib/wordpress/seo';
 import BlogCard from '@/components/ui/BlogCard';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const revalidate = 3600; // Revalidate every hour
 
@@ -16,7 +18,9 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
   const { posts, totalPages } = await getPosts({ page: currentPage, per_page: 9 });
 
   return (
-    <main className="min-h-screen pt-24 pb-16">
+    <>
+      <Header />
+      <main className="min-h-screen pt-24 pb-16">
       {/* Header section */}
       <section className="bg-muted py-16 mb-12">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
@@ -97,6 +101,8 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
           </div>
         )}
       </section>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }

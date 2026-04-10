@@ -7,6 +7,7 @@ export interface SiteOptions {
   zalo: string;
   email: string;
   logo: string;
+  header_code?: string;
 }
 
 const defaultOptions: SiteOptions = {
@@ -14,6 +15,7 @@ const defaultOptions: SiteOptions = {
   zalo: 'https://zalo.me/0901234567',
   email: 'hello@webagencyvn.com',
   logo: '/assets/images/app_logo.png',
+  header_code: '',
 };
 
 const SiteOptionsContext = createContext<SiteOptions>(defaultOptions);
@@ -30,6 +32,7 @@ export function SiteOptionsProvider({
     zalo: options.zalo || defaultOptions.zalo,
     email: options.email || defaultOptions.email,
     logo: options.logo || defaultOptions.logo,
+    header_code: options.header_code || defaultOptions.header_code,
   };
   return (
     <SiteOptionsContext.Provider value={merged}>
