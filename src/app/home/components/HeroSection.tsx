@@ -149,7 +149,7 @@ export default function HeroSection() {
         {/* Badge */}
         <div className="badge-gradient mb-6 mx-auto inline-flex">
           <span className="w-2 h-2 rounded-full bg-primary animate-pulse-glow" />
-          Freelancer · WordPress Flatsome · Việt Nam
+          ⭐ 120+ dự án · 5.0/5 đánh giá · Bàn giao 5 ngày
         </div>
 
         {/* H1 */}
@@ -169,11 +169,10 @@ export default function HeroSection() {
           ref={descRef}
           className="text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed mb-10">
           
-          <span className="highlight-word font-semibold text-foreground">Flatsome WordPress</span> chuẩn SEO local,
-          tích hợp chat{' '}
-          <span className="font-semibold text-[#0068FF]">Zalo</span> — cho{' '}
-          <span className="highlight-word font-semibold text-foreground">freelancer</span>,
-          coaches, TikTokers, quán cà phê & <span className="highlight-word font-semibold text-foreground">SME</span>.
+          Khách hàng <span className="highlight-word font-semibold text-foreground">tìm bạn trên Google</span> thay vì chỉ Facebook
+          — website chuyên nghiệp, chuẩn SEO, tích hợp{' '}
+          <span className="font-semibold text-[#0068FF]">Zalo</span> chat.
+          Giao đúng 5 ngày, <span className="highlight-word font-semibold text-foreground">bảo hành 6 tháng</span>.
         </p>
 
         {/* CTA Buttons */}
@@ -184,16 +183,16 @@ export default function HeroSection() {
           <button
             onClick={scrollToContact}
             className="btn-primary text-base px-8 py-4"
-            aria-label="Tư vấn miễn phí ngay">
+            aria-label="Nhận báo giá trong 30 phút">
             
-            <span>🚀 Tư vấn miễn phí</span>
+            <span>🚀 Nhận báo giá trong 30 phút</span>
           </button>
           <button
             onClick={scrollToPortfolio}
             className="btn-secondary text-base px-8 py-4"
-            aria-label="Xem portfolio">
+            aria-label="Xem 120+ dự án đã làm">
             
-            Xem Portfolio →
+            Xem 120+ dự án đã làm →
           </button>
         </div>
 

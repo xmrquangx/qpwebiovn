@@ -169,9 +169,15 @@ export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: strin
               />
 
               <div className="relative z-10">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-xs font-bold text-primary uppercase tracking-widest mb-6 font-display">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-xs font-bold text-primary uppercase tracking-widest mb-4 font-display">
                   <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                   Sẵn sàng bắt đầu
+                </div>
+
+                {/* Urgency */}
+                <div className="flex items-center gap-2 mb-6 px-3 py-2 rounded-lg bg-orange-500/10 border border-orange-500/20 w-fit">
+                  <span className="text-sm">🔥</span>
+                  <span className="text-xs font-bold text-orange-400">Tháng 5: Chỉ nhận tối đa 10 dự án</span>
                 </div>
 
                 <h3 className="font-display font-bold text-white text-2xl md:text-3xl mb-4 leading-tight">
@@ -195,14 +201,14 @@ export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: strin
                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.03c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L6.26 14.167l-2.95-.924c-.642-.204-.654-.642.136-.953l11.527-4.445c.535-.194 1.003.131.589.403z"/>
                     </svg>
-                    <span>Nhắn Zalo ngay</span>
+                    <span>Nhắn Zalo — Báo giá 30 phút</span>
                   </a>
                   <button
                     onClick={scrollToContact}
                     className="btn-secondary w-full justify-center border-white/20 text-white hover:border-white/50 hover:text-white"
-                    aria-label="Hoặc gọi điện trực tiếp"
+                    aria-label="Điền form nhận báo giá"
                   >
-                    📞 Gọi {hotline}
+                    📋 Hoặc điền form bên dưới
                   </button>
                 </div>
 

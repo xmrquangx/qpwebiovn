@@ -919,38 +919,32 @@ function qpweb_register_custom_endpoints() {
  * Trả thông tin liên hệ từ Options Page (SCF/ACF)
  */
 function qpweb_get_options( $request ) {
-    $hotline = '';
-    $zalo    = '';
-    $email   = '';
-    $logo    = '';
+    $options = [];
 
-    // Thử lấy từ ACF/SCF options page
-    if ( function_exists( 'get_field' ) ) {
-        $hotline = get_field( 'hotline', 'option' ) ?: '';
-        $zalo    = get_field( 'zalo',    'option' ) ?: '';
-        $email   = get_field( 'email',   'option' ) ?: '';
-
-        // Logo field — ACF Image field trả về URL hoặc array
-        $logo_raw = get_field( 'logo', 'option' );
-        if ( is_array( $logo_raw ) && ! empty( $logo_raw['url'] ) ) {
-            $logo = $logo_raw['url'];
-        } elseif ( is_string( $logo_raw ) && ! empty( $logo_raw ) ) {
-            $logo = $logo_raw;
+    // Thử lấy toàn bộ fields từ ACF/SCF options page
+    if ( function_exists( 'get_fields' ) ) {
+        $acf_options = get_fields( 'option' );
+        if ( ! empty( $acf_options ) && is_array( $acf_options ) ) {
+            foreach ( $acf_options as $key => $value ) {
+                // Xử lý riêng logo/image field nếu trả về mảng chứa 'url'
+                if ( is_array( $value ) && isset( $value['url'] ) ) {
+                    $options[ $key ] = $value['url'];
+                } else {
+                    $options[ $key ] = $value;
+                }
+            }
         }
     }
 
-    // Fallback sang get_option nếu ACF không có
-    if ( empty( $hotline ) ) $hotline = get_option( 'qpweb_hotline', '' );
-    if ( empty( $zalo ) )    $zalo    = get_option( 'qpweb_zalo', '' );
-    if ( empty( $email ) )   $email   = get_option( 'qpweb_email', '' );
-    if ( empty( $logo ) )    $logo    = get_option( 'qpweb_logo', '' );
+    // Fallback sang get_option cho các trường cốt lõi nếu không có trong ACF/SCF
+    $core_keys = [ 'hotline', 'zalo', 'email', 'logo', 'header_code' ];
+    foreach ( $core_keys as $key ) {
+        if ( empty( $options[ $key ] ) ) {
+            $options[ $key ] = get_option( 'qpweb_' . $key, '' );
+        }
+    }
 
-    return rest_ensure_response([
-        'hotline' => $hotline,
-        'zalo'    => $zalo,
-        'email'   => $email,
-        'logo'    => $logo,
-    ]);
+    return rest_ensure_response( $options );
 }
 
 /**

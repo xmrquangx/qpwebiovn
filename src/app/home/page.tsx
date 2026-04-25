@@ -3,12 +3,15 @@ import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroSection from './components/HeroSection';
+import ProblemSection from './components/ProblemSection';
 import AdvantagesSection from './components/AdvantagesSection';
 import PricingSection from './components/PricingSection';
 import PortfolioSection from './components/PortfolioSection';
 import ProcessSection from './components/ProcessSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import FaqSection from './components/FaqSection';
+import ContactFormSection from './components/ContactFormSection';
+import StickyCTA from './components/StickyCTA';
 import ZaloFloat from './components/ZaloFloat';
 import RankMathSchema from '@/components/RankMathSchema';
 import {
@@ -42,14 +45,17 @@ export default async function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <ProblemSection />
         <AdvantagesSection />
         <PricingSection wpPlans={plans} />
         <PortfolioSection wpItems={portfolioItems} />
         <ProcessSection wpSteps={steps} />
         <TestimonialsSection wpTestimonials={testimonials} />
         <FaqSection wpFaqs={faqs} />
+        <ContactFormSection />
       </main>
       <Footer />
+      <StickyCTA />
       <ZaloFloat />
     </>
   );
