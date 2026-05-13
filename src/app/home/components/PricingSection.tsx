@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
+import { trackEvent } from '@/lib/analytics';
 
 interface PricingPlan {
   name: string;
@@ -81,7 +82,23 @@ const plans: PricingPlan[] = [
   },
 ];
 
-export default function PricingSection({ wpPlans = [] }: { wpPlans?: { name: string; price: string; desc: string; pages: string; design: string; seo: string; warranty: string; features: string[]; popular: boolean; cta: string; num: string }[] }) {
+export default function PricingSection({
+  wpPlans = [],
+}: {
+  wpPlans?: {
+    name: string;
+    price: string;
+    desc: string;
+    pages: string;
+    design: string;
+    seo: string;
+    warranty: string;
+    features: string[];
+    popular: boolean;
+    cta: string;
+    num: string;
+  }[];
+}) {
   const activePlans = wpPlans.length > 0 ? wpPlans : plans;
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -109,7 +126,8 @@ export default function PricingSection({ wpPlans = [] }: { wpPlans?: { name: str
     cards.forEach((card, i) => {
       card.style.opacity = '0';
       card.style.transform = 'translateY(32px)';
-      card.style.transition = 'opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)';
+      card.style.transition =
+        'opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)';
       card.setAttribute('data-delay', String(i * 120));
       observer.observe(card);
     });
@@ -133,7 +151,8 @@ export default function PricingSection({ wpPlans = [] }: { wpPlans?: { name: str
     };
   }, []);
 
-  const scrollToContact = () => {
+  const scrollToContact = (planName = 'unsure') => {
+    trackEvent('ClickPricingCTA', { location: 'pricing', plan: planName });
     const el = document.querySelector('#contact');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
@@ -154,8 +173,7 @@ export default function PricingSection({ wpPlans = [] }: { wpPlans?: { name: str
             className="font-display font-bold text-foreground mb-4"
             style={{ fontSize: 'clamp(24px, 3.5vw, 40px)' }}
           >
-            Chọn gói phù hợp,{' '}
-            <span className="highlight-blue">không phí ẩn</span>
+            Chọn gói phù hợp, <span className="highlight-blue">không phí ẩn</span>
           </h2>
           <p className="text-muted text-lg max-w-xl mx-auto">
             Giá cố định, thanh toán rõ ràng. Tất cả gói đều bao gồm domain + hosting năm đầu.
@@ -168,9 +186,7 @@ export default function PricingSection({ wpPlans = [] }: { wpPlans?: { name: str
             <div
               key={plan.name}
               className={`pricing-card spotlight-card flex flex-col ${
-                plan.popular
-                  ? 'ring-2 ring-primary/40 shadow-orange'
-                  : ''
+                plan.popular ? 'ring-2 ring-primary/40 shadow-orange' : ''
               }`}
             >
               {/* Popular badge */}
@@ -206,7 +222,10 @@ export default function PricingSection({ wpPlans = [] }: { wpPlans?: { name: str
                     { label: 'Tối ưu', value: plan.seo },
                     { label: 'Bảo hành', value: plan.warranty },
                   ].map((spec) => (
-                    <div key={spec.label} className="flex justify-between items-start gap-2 text-sm">
+                    <div
+                      key={spec.label}
+                      className="flex justify-between items-start gap-2 text-sm"
+                    >
                       <span className="text-muted font-medium flex-shrink-0">{spec.label}:</span>
                       <span className="text-foreground font-semibold text-right">{spec.value}</span>
                     </div>
@@ -218,8 +237,18 @@ export default function PricingSection({ wpPlans = [] }: { wpPlans?: { name: str
                   {plan.features.map((feat) => (
                     <li key={feat} className="flex items-start gap-3 text-sm">
                       <span className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-3 h-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        <svg
+                          className="w-3 h-3 text-primary"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={3}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M4.5 12.75l6 6 9-13.5"
+                          />
                         </svg>
                       </span>
                       <span className="text-foreground/80">{feat}</span>
@@ -228,8 +257,12 @@ export default function PricingSection({ wpPlans = [] }: { wpPlans?: { name: str
                 </ul>
 
                 <button
-                  onClick={scrollToContact}
-                  className={plan.popular ? 'btn-primary w-full justify-center' : 'btn-secondary w-full justify-center'}
+                  onClick={() => scrollToContact(plan.name)}
+                  className={
+                    plan.popular
+                      ? 'btn-primary w-full justify-center'
+                      : 'btn-secondary w-full justify-center'
+                  }
                   aria-label={`${plan.cta} - ${plan.name}`}
                 >
                   {plan.cta}
@@ -243,7 +276,7 @@ export default function PricingSection({ wpPlans = [] }: { wpPlans?: { name: str
         <p className="text-center text-sm text-muted mt-8">
           💡 Chưa chắc gói nào phù hợp?{' '}
           <button
-            onClick={scrollToContact}
+            onClick={() => scrollToContact('custom')}
             className="text-primary font-semibold hover:underline"
           >
             Nhắn Zalo để được tư vấn miễn phí

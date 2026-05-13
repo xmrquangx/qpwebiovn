@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { useSiteOptions } from '@/lib/SiteOptionsContext';
+import { trackContactAction } from '@/lib/analytics';
 
 const faqs = [
   {
@@ -37,9 +38,13 @@ const trustItems = [
   { icon: '🛡️', label: 'Bảo hành', sub: '6-12 tháng' },
 ];
 
-export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: string; answer: string }[] }) {
+export default function FaqSection({
+  wpFaqs = [],
+}: {
+  wpFaqs?: { question: string; answer: string }[];
+}) {
   const { hotline, zalo } = useSiteOptions();
-  const activeFaqs = wpFaqs.length > 0 ? wpFaqs.map(f => ({ q: f.question, a: f.answer })) : faqs;
+  const activeFaqs = wpFaqs.length > 0 ? wpFaqs.map((f) => ({ q: f.question, a: f.answer })) : faqs;
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -76,6 +81,7 @@ export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: strin
   }, []);
 
   const scrollToContact = () => {
+    trackContactAction('ClickFaqFormCTA', 'faq_panel');
     const el = document.querySelector('#contact');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
@@ -93,7 +99,9 @@ export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: strin
           {trustItems.map((item) => (
             <div key={item.label} className="card-base p-5 text-center">
               <div className="text-3xl mb-2">{item.icon}</div>
-              <div className="font-display font-extrabold text-xl highlight-orange">{item.label}</div>
+              <div className="font-display font-extrabold text-xl highlight-orange">
+                {item.label}
+              </div>
               <div className="text-xs text-muted">{item.sub}</div>
             </div>
           ))}
@@ -109,8 +117,7 @@ export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: strin
                 className="font-display font-bold text-foreground"
                 style={{ fontSize: 'clamp(24px, 3vw, 36px)' }}
               >
-                Còn thắc mắc?{' '}
-                <span className="highlight-blue">Mình giải đáp</span>
+                Còn thắc mắc? <span className="highlight-blue">Mình giải đáp</span>
               </h2>
             </div>
 
@@ -128,12 +135,21 @@ export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: strin
                     </span>
                     <span
                       className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 ${
-                        openIndex === i
-                          ? 'bg-primary text-white rotate-45' :'bg-bg-alt text-muted'
+                        openIndex === i ? 'bg-primary text-white rotate-45' : 'bg-bg-alt text-muted'
                       }`}
                     >
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2.5}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 4.5v15m7.5-7.5h-15"
+                        />
                       </svg>
                     </span>
                   </button>
@@ -177,17 +193,18 @@ export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: strin
                 {/* Urgency */}
                 <div className="flex items-center gap-2 mb-6 px-3 py-2 rounded-lg bg-orange-500/10 border border-orange-500/20 w-fit">
                   <span className="text-sm">🔥</span>
-                  <span className="text-xs font-bold text-orange-400">Tháng 5: Chỉ nhận tối đa 10 dự án</span>
+                  <span className="text-xs font-bold text-orange-400">
+                    Tháng 5: Chỉ nhận tối đa 10 dự án
+                  </span>
                 </div>
 
                 <h3 className="font-display font-bold text-white text-2xl md:text-3xl mb-4 leading-tight">
-                  Nhận báo giá{' '}
-                  <span className="highlight-orange">miễn phí</span>{' '}
-                  trong 30 phút
+                  Nhận báo giá <span className="highlight-orange">miễn phí</span> trong 30 phút
                 </h3>
 
                 <p className="text-white/60 text-sm leading-relaxed mb-8">
-                  Mô tả ngắn về website bạn cần — mình sẽ báo giá và timeline cụ thể qua Zalo ngay hôm nay.
+                  Mô tả ngắn về website bạn cần — mình sẽ báo giá và timeline cụ thể qua Zalo ngay
+                  hôm nay.
                 </p>
 
                 <div className="space-y-4">
@@ -196,10 +213,11 @@ export default function FaqSection({ wpFaqs = [] }: { wpFaqs?: { question: strin
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary w-full justify-center text-base"
+                    onClick={() => trackContactAction('ClickZalo', 'faq_panel')}
                     aria-label="Nhắn Zalo ngay"
                   >
                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.03c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L6.26 14.167l-2.95-.924c-.642-.204-.654-.642.136-.953l11.527-4.445c.535-.194 1.003.131.589.403z"/>
+                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.03c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L6.26 14.167l-2.95-.924c-.642-.204-.654-.642.136-.953l11.527-4.445c.535-.194 1.003.131.589.403z" />
                     </svg>
                     <span>Nhắn Zalo — Báo giá 30 phút</span>
                   </a>

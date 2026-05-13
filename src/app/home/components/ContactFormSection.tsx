@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { useSiteOptions } from '@/lib/SiteOptionsContext';
+import { trackContactAction, trackEvent, trackLead } from '@/lib/analytics';
 
 const industryOptions = [
   'Quán cà phê / Nhà hàng',
@@ -18,10 +19,13 @@ export default function ContactFormSection() {
   const [formData, setFormData] = useState({ name: '', phone: '', industry: '' });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [started, setStarted] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    const items = sectionRef.current?.querySelectorAll('.contact-animate') as NodeListOf<HTMLElement>;
+    const items = sectionRef.current?.querySelectorAll(
+      '.contact-animate'
+    ) as NodeListOf<HTMLElement>;
     if (!items) return;
 
     const observer = new IntersectionObserver(
@@ -62,8 +66,22 @@ export default function ContactFormSection() {
     const message = `Xin chào, mình là ${formData.name}. Mình cần tư vấn thiết kế website${formData.industry ? ` cho ngành ${formData.industry}` : ''}. SĐT: ${formData.phone}`;
     const zaloUrl = `${zalo}?text=${encodeURIComponent(message)}`;
 
-    // Simulate small delay for UX
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...formData,
+          source: 'homepage_contact_form',
+          message,
+        }),
+      });
+    } catch {
+      trackEvent('ContactApiFallback', { location: 'contact_form' });
+    }
+
+    trackLead('contact_form', { industry: formData.industry || 'unknown' });
+
     setLoading(false);
     setSubmitted(true);
 
@@ -71,6 +89,12 @@ export default function ContactFormSection() {
     setTimeout(() => {
       window.open(zaloUrl, '_blank', 'noopener,noreferrer');
     }, 800);
+  };
+
+  const handleFormStart = () => {
+    if (started) return;
+    setStarted(true);
+    trackEvent('FormStart', { location: 'contact_form' });
   };
 
   return (
@@ -93,14 +117,18 @@ export default function ContactFormSection() {
               Báo giá <span className="highlight-orange">miễn phí</span> trong 30 phút
             </h2>
             <p className="text-muted mb-8 text-sm leading-relaxed">
-              Điền thông tin bên dưới — mình sẽ liên hệ qua Zalo ngay hôm nay để tư vấn và báo giá cụ thể.
+              Điền thông tin bên dưới — mình sẽ liên hệ qua Zalo ngay hôm nay để tư vấn và báo giá
+              cụ thể.
             </p>
 
             {!submitted ? (
               <form onSubmit={handleSubmit} className="space-y-5">
                 {/* Name */}
                 <div>
-                  <label htmlFor="contact-name" className="block text-sm font-semibold text-foreground mb-2">
+                  <label
+                    htmlFor="contact-name"
+                    className="block text-sm font-semibold text-foreground mb-2"
+                  >
                     Tên của bạn <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -109,6 +137,7 @@ export default function ContactFormSection() {
                     required
                     placeholder="Ví dụ: Lan Anh"
                     value={formData.name}
+                    onFocus={handleFormStart}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full px-4 py-3.5 rounded-xl border border-border bg-white text-foreground text-sm placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
                   />
@@ -116,7 +145,10 @@ export default function ContactFormSection() {
 
                 {/* Phone */}
                 <div>
-                  <label htmlFor="contact-phone" className="block text-sm font-semibold text-foreground mb-2">
+                  <label
+                    htmlFor="contact-phone"
+                    className="block text-sm font-semibold text-foreground mb-2"
+                  >
                     Số điện thoại / Zalo <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -125,6 +157,7 @@ export default function ContactFormSection() {
                     required
                     placeholder="Ví dụ: 0901 234 567"
                     value={formData.phone}
+                    onFocus={handleFormStart}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full px-4 py-3.5 rounded-xl border border-border bg-white text-foreground text-sm placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
                   />
@@ -132,18 +165,24 @@ export default function ContactFormSection() {
 
                 {/* Industry */}
                 <div>
-                  <label htmlFor="contact-industry" className="block text-sm font-semibold text-foreground mb-2">
+                  <label
+                    htmlFor="contact-industry"
+                    className="block text-sm font-semibold text-foreground mb-2"
+                  >
                     Bạn cần website cho?
                   </label>
                   <select
                     id="contact-industry"
                     value={formData.industry}
+                    onFocus={handleFormStart}
                     onChange={(e) => setFormData({ ...formData, industry: e.target.value })}
                     className="w-full px-4 py-3.5 rounded-xl border border-border bg-white text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all appearance-none cursor-pointer"
                   >
                     <option value="">— Chọn ngành —</option>
                     {industryOptions.map((opt) => (
-                      <option key={opt} value={opt}>{opt}</option>
+                      <option key={opt} value={opt}>
+                        {opt}
+                      </option>
                     ))}
                   </select>
                 </div>
@@ -158,8 +197,19 @@ export default function ContactFormSection() {
                   {loading ? (
                     <span className="flex items-center gap-2">
                       <svg className="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                        />
                       </svg>
                       Đang gửi...
                     </span>
@@ -185,7 +235,8 @@ export default function ContactFormSection() {
                   Đã nhận thông tin!
                 </h3>
                 <p className="text-muted text-sm mb-6">
-                  Mình sẽ liên hệ bạn qua Zalo trong 30 phút. Nếu cần gấp, nhắn Zalo hoặc gọi trực tiếp nhé!
+                  Mình sẽ liên hệ bạn qua Zalo trong 30 phút. Nếu cần gấp, nhắn Zalo hoặc gọi trực
+                  tiếp nhé!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
@@ -193,12 +244,14 @@ export default function ContactFormSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary justify-center"
+                    onClick={() => trackContactAction('ClickZalo', 'contact_success')}
                   >
                     💬 Nhắn Zalo ngay
                   </a>
                   <a
                     href={`tel:${hotline.replace(/\s/g, '')}`}
                     className="btn-secondary justify-center"
+                    onClick={() => trackContactAction('ClickPhone', 'contact_success')}
                   >
                     📞 Gọi {hotline}
                   </a>
@@ -231,7 +284,8 @@ export default function ContactFormSection() {
                   Hoặc liên hệ trực tiếp
                 </h3>
                 <p className="text-white/60 text-sm leading-relaxed mb-6">
-                  Mô tả ngắn về website bạn cần — mình báo giá và timeline cụ thể qua Zalo ngay hôm nay.
+                  Mô tả ngắn về website bạn cần — mình báo giá và timeline cụ thể qua Zalo ngay hôm
+                  nay.
                 </p>
 
                 <div className="space-y-3">
@@ -240,12 +294,14 @@ export default function ContactFormSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary w-full justify-center"
+                    onClick={() => trackContactAction('ClickZalo', 'contact_panel')}
                   >
                     💬 Nhắn Zalo ngay
                   </a>
                   <a
                     href={`tel:${hotline.replace(/\s/g, '')}`}
                     className="btn-secondary w-full justify-center border-white/20 text-white hover:border-white/50"
+                    onClick={() => trackContactAction('ClickPhone', 'contact_panel')}
                   >
                     📞 Gọi {hotline}
                   </a>

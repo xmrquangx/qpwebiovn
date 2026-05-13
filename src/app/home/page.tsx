@@ -9,6 +9,7 @@ import PricingSection from './components/PricingSection';
 import PortfolioSection from './components/PortfolioSection';
 import ProcessSection from './components/ProcessSection';
 import TestimonialsSection from './components/TestimonialsSection';
+import CaseStudySection from './components/CaseStudySection';
 import FaqSection from './components/FaqSection';
 import ContactFormSection from './components/ContactFormSection';
 import StickyCTA from './components/StickyCTA';
@@ -51,6 +52,7 @@ export default async function HomePage() {
         <PortfolioSection wpItems={portfolioItems} />
         <ProcessSection wpSteps={steps} />
         <TestimonialsSection wpTestimonials={testimonials} />
+        <CaseStudySection />
         <FaqSection wpFaqs={faqs} />
         <ContactFormSection />
       </main>
